@@ -28,7 +28,7 @@
 ### Friday
 10. Cisco NX-OS device level APIs - NX-CLI, NX-API-CLI, NX-API-REST - 1 hour + lab Alex presents and Adrian for the lab
 11. Cisco APIs for a sustainable future - 1 hour + lab Adrian presents and Alex for the lab
-============================
+
 
 <br>
 
