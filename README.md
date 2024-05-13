@@ -4,15 +4,15 @@
 
 ### Schedule
 
-#### Monday
-1. Intro to REST APIs - 1 hour + lab with Postman - Alex/Aaron presents and Adrian for the lab
+#### [Monday](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/1-Monday)
+1. [Intro to REST APIs](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/1-Monday/Intro-to-REST-APIs) - 1 hour + lab with Postman - Alex/Aaron presents and Adrian for the lab
 2. [Intro to GIT](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/1-Monday/Intro-to-Git) - 1 hour + lab - Aaron presents and all three of us for the lab
    * 2a Linux and Python? introductory content?
 
 
-#### Tuesday
-3. Intro to Ansible - 1 hour + lab - Alex presents and Adrian for the lab
-4. Intro to Terraform - 1 hour + lab - Alex presents and Adrian on the lab
+#### [Tuesday](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/2-Tuesday)
+3. [Intro to Ansible](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/2-Tuesday/Intro-to-Ansible) - 1 hour + lab - Alex presents and Adrian for the lab
+4. [Intro to Terraform](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/2-Tuesday/Intro-to-Terraform) - 1 hour + lab - Alex presents and Adrian on the lab
 
 
 #### Wednesday
