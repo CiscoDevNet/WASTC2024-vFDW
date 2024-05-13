@@ -31,7 +31,7 @@
 
 
 <br>
-<img alt="preview" src="https://www.wastc.org/2024-vfdw" height=400 width=640>
+<p align="center"><img src="[https://github.com/xanderstevenson/simple-netdevops-ci/assets/27918923/c006358a-eba3-4a48-b1e0-8dc488223f2e](https://www.wastc.org/2024-vfdw)" width="500" /></p>
 
 
 The [CODE_OF_CONDUCT.md](https://github.com/CiscoDevNet/WASTC2024-vFDW/blob/main/CODE_OF_CONDUCT.md) reflects our standards for interaction. 
