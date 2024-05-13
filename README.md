@@ -31,8 +31,7 @@
 
 
 <br>
-![WASTC ICT Faculty Develop Weeks 2024](https://www.wastc.org/2024-vfdw)
-
+<img alt="preview" src="https://www.wastc.org/2024-vfdw" height=400 width=640>
 
 
 The [CODE_OF_CONDUCT.md](https://github.com/CiscoDevNet/WASTC2024-vFDW/blob/main/CODE_OF_CONDUCT.md) reflects our standards for interaction. 
