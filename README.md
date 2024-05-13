@@ -15,19 +15,19 @@
 4. [Intro to Terraform](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/2-Tuesday/Intro-to-Terraform) - 1 hour + lab - Alex presents and Adrian on the lab
 
 
-#### Wednesday
-5. Websockets and webhooks - 1 hour + lab - Adrian presents and Alex for the lab
-6. NETCONF & RESTCONF for Cisco IOS XE - 1 hour + lab - Adrian/Aaron presents and Alex for the lab
+#### [Wednesday](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/3-Wednesday)
+5. [Websockets and Webhooks](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/3-Wednesday/Websockets-and-Webhooks) - 1 hour + lab - Adrian presents and Alex for the lab
+6. [NETCONF & RESTCONF for Cisco IOS XE](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/3-Wednesday/NETCONF-and-RESTCONF) - 1 hour + lab - Adrian/Aaron presents and Alex for the lab
 
 
-#### Thursday
-7. Intro to Catalyst Center Python SDK - 1 hour + lab - Adrian presents and Alex for the lab
-8. Intro to Catalyst SDWAN Python SDK - 1 hour + lab - Adrian presents and Alex for the lab
+#### [Thursday](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/4-Thursday)
+7. [Intro to Catalyst Center Python SDK](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/4-Thursday/Intro-to-Catalyst-Center-Python-SDK) - 1 hour + lab - Adrian presents and Alex for the lab
+8. [Intro to Catalyst SDWAN Python SDK](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/4-Thursday/Intro-to-Catalyst-SDWAN-Python-SDK) - 1 hour + lab - Adrian presents and Alex for the lab
 
 
-#### Friday
-9. Cisco NX-OS device level APIs - NX-CLI, NX-API-CLI, NX-API-REST - 1 hour + lab Alex presents and Adrian for the lab
-10. Cisco APIs for a sustainable future - 1 hour + lab Adrian presents and Alex for the lab
+#### [Friday](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/5-Friday)
+9. [Cisco NX-OS device level APIs](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/5-Friday/Cisco-NX-OS-device-level-APIs) - NX-CLI, NX-API-CLI, NX-API-REST - 1 hour + lab Alex presents and Adrian for the lab
+10. [Cisco APIs for a Sustainable Future](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/5-Friday/Cisco-APIs-for-a-Sustainable-Future) - 1 hour + lab Adrian presents and Alex for the lab
 
 
 <br>
