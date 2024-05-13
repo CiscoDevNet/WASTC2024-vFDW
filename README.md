@@ -31,7 +31,7 @@
 
 
 <br>
-<p align="center"><img src="https://www.wastc.org/2024-vfdw" width="500" /></p>
+<p align="center"><img src="https://github.com/CiscoDevNet/WASTC2024-vFDW/blob/main/2-Tuesday/Intro-to-Ansible/WASTC%20ICT%20Faculty%20Develop%20Weeks%202024.gif?raw=true" width="500" /></p>
 
 
 The [CODE_OF_CONDUCT.md](https://github.com/CiscoDevNet/WASTC2024-vFDW/blob/main/CODE_OF_CONDUCT.md) reflects our standards for interaction. 
