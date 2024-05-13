@@ -4,7 +4,7 @@
 
 ## <h2 align="center">Schedule</h2>
 
-#### [Monday](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/1-Monday)
+#### Monday
 1. [Intro to REST APIs](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/1-Monday/Intro-to-REST-APIs) - 1 hour + lab with Postman - Alex/Aaron presents and Adrian for the lab
 2. [Intro to GIT](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/1-Monday/Intro-to-Git) - 1 hour + lab - Aaron presents and all three of us for the lab
    * 2a Linux and Python? introductory content?
