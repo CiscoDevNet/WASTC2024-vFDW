@@ -36,7 +36,7 @@
 <p align='center'><a href='https://www.wastc.org/'>https://www.wastc.org/</a></p>
 <p align='center'><a href='https://developer.cisco.com/'>https://developer.cisco.com/</a></p>
 
-
+<hr>
 
 The [CODE_OF_CONDUCT.md](https://github.com/CiscoDevNet/WASTC2024-vFDW/blob/main/CODE_OF_CONDUCT.md) reflects our standards for interaction. 
 
