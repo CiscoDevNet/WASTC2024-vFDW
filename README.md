@@ -1,6 +1,4 @@
 # <h1 align="center">[WASTC2024-vFDW](https://drive.google.com/file/d/1vOEO6-PxyzpqRCuSVPDGWBFUtkD7bonb/view?pli=1)</h1>
-<p align='center'><a href='https://www.wastc.org/'>https://www.wastc.org/</a></p>
-
 
 
 ## <h2 align="center">Schedule</h2>
@@ -33,6 +31,11 @@
 
 <br>
 <p align="center"><img src="https://github.com/CiscoDevNet/WASTC2024-vFDW/blob/main/2-Tuesday/Intro-to-Ansible/WASTC%20ICT%20Faculty%20Develop%20Weeks%202024.gif?raw=true" width="500" /></p>
+
+## <h2 align="center">Resources</h2>
+<p align='center'><a href='https://www.wastc.org/'>https://www.wastc.org/</a></p>
+<p align='center'><a href='https://developer.cisco.com/'>https://developer.cisco.com/</a></p>
+
 
 
 The [CODE_OF_CONDUCT.md](https://github.com/CiscoDevNet/WASTC2024-vFDW/blob/main/CODE_OF_CONDUCT.md) reflects our standards for interaction. 
