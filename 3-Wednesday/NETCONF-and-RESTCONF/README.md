@@ -249,8 +249,36 @@ The (truncated) results should look something like this:
 
 ### **Step 6**: Create an interface using a Python Script and RETCONF
 
-Now, you use a Python script to create an interface on the Cat8000V running Cisco IOS XE.
+Now, you use a Python script to create interface on the Cat8000V running Cisco IOS XE.
 
+- Open **create_interface.py** and observe the logic. It's similar to the script to display interfaces but now we're using POST instead of GET.
+
+- Create interface Loopback101
+
+```
+python 3create_interface.py
+```
+
+- You may receive an error showing the interface already exists.
+
+```
+Failed to create interface. Status code: 409
+Response: {
+  "ietf-restconf:errors": {
+    "error": [
+      {
+        "error-type": "application",
+        "error-tag": "data-exists",
+        "error-path": "/ietf-interfaces:interfaces",
+        "error-message": "object already exists: /if:interfaces/if:interface[if:name='Loopback101']"
+      }
+    ]
+  }
+}
+```
+
+
+- If that is the case, you can first remove Loopback
 
 
 
