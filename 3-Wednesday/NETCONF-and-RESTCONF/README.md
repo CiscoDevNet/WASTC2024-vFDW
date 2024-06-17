@@ -259,7 +259,7 @@ Now, you use a Python script to create interface on the Cat8000V running Cisco I
 python 3create_interface.py
 ```
 
-- You may receive an error showing the interface already exists.
+If it was successful, you'll see an output of *Interface Loopback101 created successfully." However, you may receive an error showing the interface already exists.
 
 ```
 Failed to create interface. Status code: 409
@@ -278,20 +278,25 @@ Response: {
 ```
 
 
-- If that is the case, you can first remove Loopback
+- If that is the case, you can first remove Loopback101 by running this script:
+
+```bash
+python3 delete_interface.py
+```
+
+This should result in the output *Interface Loopback101 deleted successfully.*
 
 
+Now, (if needed) you can create the interface
 
+```bash
+python3 create_interface.py
+```
 
+This should result in *Interface Loopback101 created successfully."*
 
-
-
-### **Cleanup**
-
-Termind
 
 
 ### **Conclusion**
 
-In con
-<br>
+
