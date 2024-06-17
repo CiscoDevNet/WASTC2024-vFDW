@@ -145,6 +145,8 @@ end
 write memory
 ```
 
+Now, when you re-run 'show running-config | include netconf', you should see 'netconf-yang' in the output.
+
 
 <br>
 
