@@ -15,7 +15,7 @@
 
 
 #### Wednesday
-5. [Websockets and Webhooks](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/3-Wednesday/Websockets-and-Webhooks) - 1 hour + lab - Adrian presents and Alex for the lab
+5. [Websockets and Webhooks](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/3-Wednesday/websockets-and-webhooks) - 1 hour + lab - Adrian presents and Alex for the lab
 6. [NETCONF & RESTCONF for Cisco IOS XE](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/3-Wednesday/NETCONF-and-RESTCONF) - 1 hour + lab - Adrian/Aaron presents and Alex for the lab
 
 
