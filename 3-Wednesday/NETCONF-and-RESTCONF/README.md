@@ -234,16 +234,18 @@ Observe how *response.json()* converts the JSON-formatted data from the response
 - Run that script
 
 ```bash
-python3 websocket_client.py
+python3 interface_display.py
 ```
 
+The (truncated) results should look something like this:
 
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/18a326d1-0aa5-4231-ad94-b8a67fb9b90f)
 
-
-> **Note:** If prompted, allow incoming network connections
+> **Note:** You can ignore the certificate warning because we are just learning, not running in production. The reason we are getting that warning is because in our GET request, we've specified *verify=False'. However, if we set it to *True*, the script would fail until we set up a proper certificate.
 
 
 <br>
+
 
 ### **Step 6**: Monitor WebSocket activity using the Admin Panel
 
