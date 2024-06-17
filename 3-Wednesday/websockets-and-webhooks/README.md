@@ -126,7 +126,7 @@ python3 websocket_server.py
 
 ### **Step 3**: Open a new terminal, observe the client, and run the client
 
-> **Note:** Every time you open a new Terminal in these labs, ensure you are in the correct directory (in this case **websockets-and-webhooks/websockets**) and that the virtual environment ins also enabled in the new Terminal.
+> **Note:** Every time you open a new Terminal in these labs, ensure you are in the correct directory (in this case **websockets-and-webhooks/websockets**) and that the virtual environment is also enabled in the new Terminal.
 <br>
 
 - Open **websocket_client.py** and observe it's contents. 
@@ -277,6 +277,9 @@ python3 app.py
 ### **Step 3**: Simulate webhook events with cURL and Postman
 
 - In a new Terminal, send a test webhook event with cURL:
+
+> **Note:** Remember to ensure you are in the correct directory (in this case **websockets-and-webhooks/webshooks**) and that the virtual environment is also enabled in the new Terminal.
+
 
 ```bash
 curl -X POST http://127.0.0.1:5000/webhook -H "Content-Type: application/json" -d '{"event": "new_data", "data": {"id": 123, "message": "This is a webhook event sent via cURL"}}'
