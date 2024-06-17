@@ -222,13 +222,13 @@ Observe how *response.json()* converts the JSON-formatted data from the response
 
 > **Note:**
 > <br>
-> - *json.load* reads JSON data from a file and converts it into a Python object.
+> *json.load* reads JSON data from a file and converts it into a Python object.
 > <br>
-> - *json.loads* reads JSON data from a string and converts it into a Python object.
+> *json.loads* reads JSON data from a string and converts it into a Python object.
 > <br>
-> - *json.dump* writes a Python object to a file as JSON data.
+> *json.dump* writes a Python object to a file as JSON data.
 > <br>
-> - *json.dumps* converts a Python object to a JSON string.
+> *json.dumps* converts a Python object to a JSON string.
   
 
 - Run that script
