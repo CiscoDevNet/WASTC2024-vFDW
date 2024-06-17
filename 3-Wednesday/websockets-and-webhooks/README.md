@@ -16,7 +16,7 @@
 ### **Step 1**: Clone the parent repo and cd into this demo
 
 ```bash
-clone https://github.com/CiscoDevNet/WASTC2024-vFDW.git
+git clone https://github.com/CiscoDevNet/WASTC2024-vFDW.git
 cd WASTC2024-vFDW/3-Wednesday/websockets-and-webhooks
 ```
 <br>
