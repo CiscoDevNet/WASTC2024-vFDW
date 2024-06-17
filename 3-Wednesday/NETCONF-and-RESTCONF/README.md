@@ -87,18 +87,13 @@ pip3 install -r requirements.txt
 
 ### **Introduction**: 
 
+Welcome, everyone! Today, we're going to dive into the world of network automation using NETCONF (Network Configuration Protocol) with Cisco IOS XE devices. NETCONF is a powerful protocol that allows us to programmatically manage and configure network devices, making our workflows more efficient and less error-prone. In this hands-on demo, we will explore how to use NETCONF to:
 
-**Interaction Between Files**
-In this diagram (above), we'll illustrate how the various files interact with each other and with the servers.
+- Retrieve the running configuration of a network device.
+- Extract specific configuration details, such as the hostname.
+- Update the device configuration, specifically changing the hostname.
 
-
-
-Modules:
-
-- **WebSocket Server**: The server listens for incoming WebSocket connections, receives and sends messages, and logs activity.
-- **WebSocket Client**: Connects to the server, sends and receives messages based on user interaction or scripts.
-- **Admin Panel**: Displays client connections and message history, interacts with the WebSocket server to fetch data.
-- **WebSocket Protocol**: Implements the WebSocket protocol for both server-side and client-side communication
+By the end of this session, you'll have a practical understanding of how to interact with network devices using NETCONF, which is a crucial skill for modern network engineers and IT professionals.*WebSocket Protocol**: Implements the WebSocket protocol for both server-side and client-side communication
 
 <br>
 
@@ -199,20 +194,33 @@ The output should look something like this:
 
 <br>
 
+### Conclusion
+
+Great job, everyone! You've just completed a hands-on demo of using NETCONF to interact with Cisco IOS XE devices. Let's recap what we accomplished so far:
+
+- Retrieved the running configuration of a network device, gaining insights into the current setup.
+- Extracted the hostname from the device's configuration, demonstrating how to filter and parse specific details.
+- Updated the device's hostname, showcasing the ability to make configuration changes programmatically.
+
+These skills are essential for automating network management tasks, reducing manual effort, and minimizing errors. As network infrastructure continues to grow in complexity, tools like NETCONF become increasingly valuable. I encourage you to explore further and apply these techniques to other aspects of network configuration and management.
 
 
-### **Step 5**: Change the message the client will send
-
-- Open **websocket_client.py** in your IDE and change line 8, inserting your own 
 
 
-- Navigate back to the terminal where the **websocket server** is running and observe a log of all messages sent, e.g.
+## RESTCONF Demo
+
+### **Introduction**: 
 
 
+### **Step 1**: Change the directory into RESTCONF
 
-  <br>
+```bash
+cd ../
+```
+<br>
 
-### **Step 6**: Communicate through the websocket via a browser
+
+### **Step 2**: Communicate through the websocket via a browser
 
 
 
