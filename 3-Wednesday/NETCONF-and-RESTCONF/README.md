@@ -117,12 +117,12 @@ cd NETconf
 
 ### **Step 2**: Confirm NETCONF is enabled in IOSXE running on the Cat8000v
 
-SSH into device
+- SSH into device
 ```bash
 ssh admin@devnetsandboxiosxe.cisco.com
 ```
 
-Provide password
+- Provide password
 ```bash
 C1sco12345
 ```
