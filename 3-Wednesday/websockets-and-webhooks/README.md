@@ -13,11 +13,11 @@
 
 > **Note:** Throughout this lab, we'll be using commands beginning with **python3**, although your system may require those commands to begin with **python**
 
-### **Step 1**: Clone this repo and cd into it
+### **Step 1**: Clone the parent repo and cd into this demo
 
 ```bash
-git clone https://github.com/xanderstevenson/websockets-and-webhooks.git
-cd websockets-and-webhooks
+clone https://github.com/CiscoDevNet/WASTC2024-vFDW.git
+cd WASTC2024-vFDW/3-Wednesday/websockets-and-webhooks
 ```
 <br>
 
