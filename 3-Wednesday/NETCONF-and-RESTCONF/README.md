@@ -205,7 +205,8 @@ Great job, everyone! You've just completed a hands-on demo of using NETCONF to i
 These skills are essential for automating network management tasks, reducing manual effort, and minimizing errors. As network infrastructure continues to grow in complexity, tools like NETCONF become increasingly valuable. I encourage you to explore further and apply these techniques to other aspects of network configuration and management.
 
 
-
+<br>
+<br>
 
 ## RESTCONF Demo
 
