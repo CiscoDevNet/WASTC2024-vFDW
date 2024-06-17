@@ -9,6 +9,28 @@
 - [Postman](https://www.postman.com/), either in the browser or desktop app
 <br>
 
+
+## Prologue
+
+Welcome to the "Websockets and Webhooks Demo," where we will dive into the world of real-time web communication. Both Websockets and Webhooks are pivotal in enabling dynamic interactions between servers and clients, but they serve different purposes and operate in distinct ways.
+
+
+Websockets provide a full-duplex communication channel over a single, long-lived connection, allowing both the client and server to send messages directly to one another once the connection is established. This is ideal for scenarios where continuous, back-and-forth communication is required, such as in chat applications or live feeds.
+
+
+On the other hand, Webhooks are essentially user-defined HTTP callbacks, which are triggered by specific events. When an event occurs, the source site makes an HTTP request to the URL configured for the webhook. This method is particularly useful for automating reactions to events and integrating with other services, as it allows applications to receive real-time notifications without the need for polling.
+
+
+In this demo, we will explore both technologies using Python. You will learn how to set up a WebSocket server and client, send and receive messages, and monitor the communication in real-time. Additionally, we will set up a webhook receiver to process incoming HTTP requests triggered by events, showcasing how webhooks can be used to push notifications to your application.
+
+
+Prerequisites for this demo include Python 3.7 or higher, an operating system that can be Mac, Windows, or Linux, a web browser, and an IDE like Visual Studio Code. Tools like Postman will also be used to simulate webhook events.
+
+
+By the end of this demo, you will have a clear understanding of how Websockets and Webhooks work, their differences, and how to implement them in your own projects. Let's get started by setting up our environment and exploring the interactive world of real-time web communication!
+
+<br>
+
 ## Setup steps
 
 > **Note:** Throughout this lab, we'll be using commands beginning with **python3**, although your system may require those commands to begin with **python**
