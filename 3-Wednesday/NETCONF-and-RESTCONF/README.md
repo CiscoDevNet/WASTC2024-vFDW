@@ -146,7 +146,7 @@ exit
 
 ### **Step 2**: Use a Python script to gather the running config from a router using NETCONF
 
-First, you'll use a Python file to retrieve the running configuration from the Cat8000V running Cisco IOS XE.
+First, you'll use a Python script to retrieve the running configuration from the Cat8000V running Cisco IOS XE.
 
 - Open **display_running_config.py** in your IDE and observe the contents.
 
@@ -165,11 +165,9 @@ python3 display_running_config.py
 
 ### **Step 3**: Use a Python script to gather the hostname from a router using NETCONF
 
-First, you'll use a Python file to retrieve the running configuration from the Cat8000V running Cisco IOS XE.
+Now, you'll use a Python script to retrieve the hostname from the Cat8000V running Cisco IOS XE.
 
-- Open **hostname.py** in your IDE and observe the contents. Now, we are suing a filter to return *only* the hostname. We also include some Python logic to handle exceptions.
-
-- Run that script
+- Open **display_hostname.py** in your IDE and observe the contents. Now, we are suing a filter to return *only* the hostname. We also include some Python logic to handle exceptions.
 
 ```bash
 python3 display_hostname.py
@@ -183,22 +181,27 @@ python3 display_hostname.py
 
 
 
+### **Step 4**: Update the hostname with NECONF and a Python script
 
-### **Step 3**: Open a new terminal, observe the client, and run the client
+Now, you'll use a Python script to update the hostname on the Cat8000V running Cisco IOS XE.
 
-> **Note:** Every time you open a new Terminal in these labs, ensure you are in the correct directory (in this case **websockets-and-webhooks/websockets**) and that the virtual environment is also enabled in the new Terminal.
-<br>
+- Open **update_hostname.py** in your IDE and observe the contents. See the different functions for displaying and setting the hostname. Also observe the way we use input() to ask the user for a hostname.
 
+- Run that script
 
 ```bash
 python3 websocket_client.py
 ```
 
-You should see the following output: **Received from server: Echo: Hello, World!**
-<br>
+The output should look something like this:
+
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/50551a4f-d788-4d6d-a040-b1ba3eb2a042)
+
 <br>
 
-### **Step 4**: Change the message the client will send
+
+
+### **Step 5**: Change the message the client will send
 
 - Open **websocket_client.py** in your IDE and change line 8, inserting your own 
 
@@ -209,7 +212,7 @@ You should see the following output: **Received from server: Echo: Hello, World!
 
   <br>
 
-### **Step 5**: Communicate through the websocket via a browser
+### **Step 6**: Communicate through the websocket via a browser
 
 
 
