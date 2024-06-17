@@ -47,7 +47,7 @@ Welcome to the "Websockets and Webhooks Demo," where we will dive into the world
 
 ```bash
 git clone https://github.com/CiscoDevNet/WASTC2024-vFDW.git
-cd WASTC2024-vFDW/3-Wednesday/websockets-and-webhooks
+cd WASTC2024-vFDW/3-Wednesday//NETCONF-and-RESTCONF
 ```
 <br>
 
@@ -83,7 +83,7 @@ pip3 install -r requirements.txt
 <br>
 <br>
 
-## WebSocket Demo
+## NETCONF Demo
 
 ### **Introduction**: 
 
