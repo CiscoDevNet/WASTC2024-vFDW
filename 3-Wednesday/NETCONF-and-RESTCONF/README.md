@@ -127,14 +127,14 @@ ssh admin@devnetsandboxiosxe.cisco.com
 C1sco12345
 ```
 
-Check is NETCONF is enabled
+- Check is NETCONF is enabled
 ```bash
 show running-config | include netconf
 ```
 
-If NETCONF is enabled, you will see the **netconf-yang** command in the running configuration output.
+- If NETCONF is enabled, you will see the **netconf-yang** command in the running configuration output.
 
-If NETCONF is *not* enabled, follow these steps to enable it:
+- If NETCONF is *not* enabled, follow these steps to enable it:
 
 Enter Global Configuration Mode, enable NETCONF, and write to memory:
 
