@@ -87,6 +87,24 @@ pip3 install -r requirements.txt
 
 ### **Introduction**: 
 
+
+**Interaction Between Files**
+In this diagram (above), we'll illustrate how the various files interact with each other and with the servers.
+
+
+
+Modules:
+
+- **WebSocket Server**: The server listens for incoming WebSocket connections, receives and sends messages, and logs activity.
+- **WebSocket Client**: Connects to the server, sends and receives messages based on user interaction or scripts.
+- **Admin Panel**: Displays client connections and message history, interacts with the WebSocket server to fetch data.
+- **WebSocket Protocol**: Implements the WebSocket protocol for both server-side and client-side communication
+
+<br>
+
+
+### **Step 1**: Use a Python script to gather the running config from a router using NETCONF
+
 First, you'll use a Python file to retrieve the running configuration from the Cat8000V running Cisco IOS XE.
 
 - Open **display_running_config.py** in your IDE and observe the contents.
@@ -114,28 +132,6 @@ Thanks for stopping by.
 </banner></motd></banner><memory><free><low-watermark><processor>63709</processor></low-watermark></free></memory><call-home><contact-email-addr xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-call-home">sch-smart-licensing@cisco.com</contact-email-addr><tac-profile xmlns="http://cisc
 
 <br>
-
-
-**Interaction Between Files**
-In this diagram (above), we'll illustrate how the various files interact with each other and with the servers.
-
-
-
-Modules:
-
-- **WebSocket Server**: The server listens for incoming WebSocket connections, receives and sends messages, and logs activity.
-- **WebSocket Client**: Connects to the server, sends and receives messages based on user interaction or scripts.
-- **Admin Panel**: Displays client connections and message history, interacts with the WebSocket server to fetch data.
-- **WebSocket Protocol**: Implements the WebSocket protocol for both server-side and client-side communication
-
-<br>
-
-
-### **Step 1**: Change directories into the **websockets** directory
-
-```bash
-cd NETconf
-```
 <br>
 
 ### **Step 2**: Confirm NETCONF is enabled in IOSXE running on the Cat8000v
