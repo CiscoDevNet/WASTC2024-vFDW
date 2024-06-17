@@ -111,13 +111,39 @@ Modules:
 ### **Step 1**: Change directories into the **websockets** directory
 
 ```bash
-cd websockets
+cd NETconf
 ```
 <br>
 
-### **Step 2**: Observe and run the server
+### **Step 2**: Confirm NETCONF is enabled in IOSXE running on the Cat8000v
 
-- Open **python websocket_server.py** and observe it's contents. 
+SSH into device
+```bash
+ssh admin@devnetsandboxiosxe.cisco.com
+```
+
+Provide password
+```bash
+C1sco12345
+```
+
+Check is NETCONF is enabled
+```bash
+show running-config | include netconf
+```
+
+If NETCONF is enabled, you will see the **netconf-yang** command in the running configuration output.
+
+If NETCONF is *not* enabled, follow these steps to enable it:
+
+Enter Global Configuration Mode, enable NETCONF, and write to memory:
+
+```bash
+configure terminal
+netconf-yang
+end
+write memory
+```
 
 
 <br>
