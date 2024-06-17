@@ -12,7 +12,7 @@
 
 #### Cat8000v Host:
 
--**Public URL**: devnetsandboxiosxe.cisco.com
+- **Public URL**: devnetsandboxiosxe.cisco.com
   <br>
 - **Username**: admin
   <br>
