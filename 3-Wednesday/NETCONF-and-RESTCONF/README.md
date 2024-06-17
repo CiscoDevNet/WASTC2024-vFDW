@@ -193,35 +193,46 @@ The output should look something like this:
 ![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/50551a4f-d788-4d6d-a040-b1ba3eb2a042)
 
 <br>
-
-### Conclusion
-
-Great job, everyone! You've just completed a hands-on demo of using NETCONF to interact with Cisco IOS XE devices. Let's recap what we accomplished so far:
-
-- Retrieved the running configuration of a network device, gaining insights into the current setup.
-- Extracted the hostname from the device's configuration, demonstrating how to filter and parse specific details.
-- Updated the device's hostname, showcasing the ability to make configuration changes programmatically.
-
-These skills are essential for automating network management tasks, reducing manual effort, and minimizing errors. As network infrastructure continues to grow in complexity, tools like NETCONF become increasingly valuable. I encourage you to explore further and apply these techniques to other aspects of network configuration and management.
-
-
 <br>
-<br>
+
 
 ## RESTCONF Demo
 
 ### **Introduction**: 
 
+For the RESTCONF demo, let's focus on a different set of tasks to showcase the versatility and capabilities of RESTCONF for network management. RESTCONF uses HTTP methods to interact with network devices, making it a simpler and more accessible option for many engineers, especially those familiar with REST APIs.
+
+<br>
 
 ### **Step 1**: Change the directory into RESTCONF
 
 ```bash
-cd ../
+cd ../RESTCONF
 ```
 <br>
 
 
-### **Step 2**: Communicate through the websocket via a browser
+### **Step 2**: Use a Python script with RESTCONF to display the interfaces
+
+Here, you use a Python script to display the interfaces on the Cat8000V running Cisco IOS XE.
+
+- Open **interface_display.py** in your IDE and observe the contents. See URI with endpoint, the headers, and the GET request needed to be sent to return the interfaces.
+
+Observe how *response.json()* converts the JSON-formatted data from the response body into a Python dictionary (or list, depending on the JSON structure). *json.dumps* is used to serialize the Python dictionary interfaces back into a JSON-formatted string. The indent=2 argument is used to pretty-print the JSON with an indentation level of 2 spaces, making it more human-readable.
+
+> **Note:**
+> json.load reads JSON data from a file and converts it into a Python object.
+> json.loads reads JSON data from a string and converts it into a Python object.
+> json.dump writes a Python object to a file as JSON data.
+> json.dumps converts a Python object to a JSON string.
+  
+
+- Run that script
+
+```bash
+python3 websocket_client.py
+```
+
 
 
 
