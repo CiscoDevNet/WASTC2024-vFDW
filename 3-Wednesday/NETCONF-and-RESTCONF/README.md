@@ -10,7 +10,9 @@
 
 - Learners will access DevNet's [IOS XE on Cat8kv AlwaysOn sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/ios-xe-always-on) directly using the following information:
 
-#### Cat8000v Host:
+#### Sandbox details
+
+Cat8000v Host:
 
 - **Public URL**: devnetsandboxiosxe.cisco.com
   <br>
@@ -33,11 +35,20 @@
 
 ## Prologue
 
-Welcome to the "Websockets and Webhooks Demo," where we will dive into the world of real-time web communication. Both Websockets and Webhooks are pivotal in enabling dynamic interactions between servers and clients, but they serve different purposes and operate in distinct ways.
+Welcome to the NETCONF & RESTCONF for Cisco IOS XE - Demo, an interactive learning experience designed to introduce you to the world of network automation using two of the most prevalent protocols in the industry: NETCONF (Network Configuration Protocol) and RESTCONF (Representational State Transfer Configuration Protocol).
 
+In this session, we will embark on a journey through the configuration and management of network devices using these protocols, which are integral to modern network operations. NETCONF provides a mechanism for installing, manipulating, and deleting the configuration of network devices, while RESTCONF allows for similar operations through a more web-friendly HTTP-based interface.
 
+Our sandbox environment, the IOS XE on Cat8kv AlwaysOn sandbox, will serve as our testing ground. Here, you will have the opportunity to apply your knowledge in a safe and controlled setting, allowing you to explore the capabilities of these protocols without the risk of affecting a live network.
+
+Before we dive into the hands-on portion of the demo, ensure you have the prerequisites in place. These include a suitable Python environment, an integrated development environment (IDE) like Visual Studio Code, and tools like Postman for API interaction. With these tools at your disposal, you'll be well-equipped to follow along with the exercises and gain practical experience with NETCONF and RESTCONF.
+
+As we proceed, remember that the goal of this demo is not just to execute commands but to understand the principles behind them. By the end of this session, you should feel more confident in your ability to automate network configurations and appreciate the efficiency gains that can be achieved through these powerful protocols.
+
+So, let's set up our environment, roll up our sleeves, and get ready to take a significant step toward grokking network automation.
 
 <br>
+
 
 ## Setup steps
 
@@ -192,8 +203,26 @@ The output should look something like this:
 
 ![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/50551a4f-d788-4d6d-a040-b1ba3eb2a042)
 
+
+<br>
+
+
+### **NETCONF Conclusion**
+
+As we wrap up the NETCONF section of our demo, let's take a moment to reflect on what we've accomplished. We've successfully connected to a Cisco IOS XE device using NETCONF, a protocol designed specifically for network configuration management. We've seen firsthand how NETCONF provides a structured and secure method for reading and writing device configurations.
+
+Through the exercises, we've retrieved the running configuration, extracted specific details like the hostname, and even updated the device configuration. These tasks, which might have been time-consuming and prone to human error if done manually, were performed swiftly and accurately with the help of our Python scripts.
+
+This section has demonstrated the power of automation and the efficiency that NETCONF brings to network operations. By leveraging this protocol, network engineers can automate repetitive tasks, reduce configuration errors, and ensure consistency across the network infrastructure.
+
+As you move forward, remember that the principles and practices you've learned here can be applied to a wide range of network automation challenges. The ability to programmatically interact with network devices is a critical skill in the modern networking landscape, and mastering NETCONF is a significant step in that direction.
+
+Keep experimenting with NETCONF, explore its full potential, and integrate it into your network automation toolkit. The knowledge you've gained today is a solid foundation for your journey toward advanced network automation.
+
 <br>
 <br>
+
+
 
 
 ## RESTCONF Demo
@@ -314,7 +343,7 @@ This should result in *Interface Loopback101 created successfully."*
 <br>
 
 
-### **Conclusion**
+### **RESTCONF Conclusion**
 
 In this RESTCONF demo, we've explored how to interact with a Cisco IOS XE device using RESTCONF, which is a powerful protocol that leverages standard HTTP methods for network configuration and management. Through the use of Python scripts, we've demonstrated the process of displaying existing interfaces, creating a new interface, and deleting an interface when necessary.
 
@@ -328,5 +357,17 @@ This demo serves as a practical introduction to network automation using RESTCON
 
 Remember, automation is a journey, and each script you write brings you one step closer to a more efficient and reliable network. Happy automating!
 
+<br>
+
+## Outro
+
+
+As we conclude our NETCONF & RESTCONF for Cisco IOS XE - Demo, I hope you've found the journey enlightening and empowering. We've navigated through the intricacies of network automation, explored the capabilities of NETCONF and RESTCONF, and applied these protocols to real-world scenarios using the IOS XE on Cat8kv AlwaysOn sandbox.
+
+Throughout this demo, you've had the chance to interact directly with network devices, retrieve and modify configurations, and witness the immediate impact of your actions. These experiences are invaluable as they provide a glimpse into the potential of automation in simplifying complex network tasks.
+
+Remember, the skills you've honed here are just the beginning. The world of network automation is vast and ever-evolving, with new tools and techniques emerging regularly. I encourage you to continue experimenting, learning, and integrating these protocols into your workflows. As you do, you'll not only increase your proficiency but also contribute to the advancement of network management practices.
+
+Thank you for your participation and curiosity. Keep exploring, keep automating, and most importantly, keep pushing the boundaries of what's possible in networking. Until next time, happy networking!
 
 
