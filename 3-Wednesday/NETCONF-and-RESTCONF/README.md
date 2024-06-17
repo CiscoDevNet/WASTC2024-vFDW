@@ -202,6 +202,16 @@ The output should look something like this:
 
 For the RESTCONF demo, let's focus on a different set of tasks to showcase the versatility and capabilities of RESTCONF for network management. RESTCONF uses HTTP methods to interact with network devices, making it a simpler and more accessible option for many engineers, especially those familiar with REST APIs.
 
+RESTCONF is a protocol based on REST principles, providing a programmatic interface for accessing data defined in YANG, using standard HTTP methods. It simplifies the process of configuring and managing network devices for engineers who are already familiar with RESTful services.
+
+In this demonstration, we will walk through several steps that highlight the power and flexibility of RESTCONF. We'll start by using a Python script to display the current configuration of interfaces on a Cat8000V router. This will give us a clear view of the device's state before we proceed to modify its configuration.
+
+Next, we'll transition into the creation and deletion of a network interface, specifically Loopback101. This exercise will illustrate how RESTCONF can be used to make precise and controlled changes to a device's configuration, which is essential for network automation and orchestration.
+
+Throughout this demo, we will observe best practices for interacting with network devices programmatically, including handling JSON data structures, managing HTTP requests and responses, and understanding the implications of SSL certificate verification in a non-production environment.
+
+By the end of this demonstration, you will have a better understanding of how RESTCONF can be leveraged to automate network configuration tasks, making your network more agile and your workflow more efficient.
+
 <br>
 
 ### **Step 1**: Change the directory into RESTCONF
@@ -259,7 +269,11 @@ Now, you use a Python script to create interface on the Cat8000V running Cisco I
 python 3create_interface.py
 ```
 
-If it was successful, you'll see an output of *Interface Loopback101 created successfully." However, you may receive an error showing the interface already exists.
+If it was successful, you'll see an output of *Interface Loopback101 created successfully.* 
+
+
+- However, you may receive an error showing the interface already exists. 
+
 
 ```
 Failed to create interface. Status code: 409
@@ -277,8 +291,8 @@ Response: {
 }
 ```
 
+If that is the case, you can first remove Loopback101 by running this script:
 
-- If that is the case, you can first remove Loopback101 by running this script:
 
 ```bash
 python3 delete_interface.py
@@ -296,8 +310,27 @@ python3 create_interface.py
 
 This should result in *Interface Loopback101 created successfully."*
 
+<br>
 
 
 ### **Conclusion**
+
+In this RESTCONF demo, we've explored how to interact with a Cisco IOS XE device using RESTCONF, which is a powerful protocol that leverages standard HTTP methods for network configuration and management. Through the use of Python scripts, we've demonstrated the process of displaying existing interfaces, creating a new interface, and deleting an interface when necessary.
+
+
+The interface_display.py script showcased the retrieval of interface data, while create_interface.py and delete_interface.py allowed us to modify the device's configuration by adding or removing an interface. These operations are fundamental for network engineers who are looking to automate and streamline their workflows.
+
+
+By successfully creating the Loopback101 interface, we've seen how RESTCONF can be used to make precise changes to a device's configuration. Conversely, the deletion script provided a way to clean up configurations, which is just as important in maintaining a manageable network environment.
+
+
+It's important to note that while we've bypassed SSL certificate verification in our scripts for simplicity and learning purposes, in a production environment, proper SSL certificates should be used, and verification should be enabled to ensure secure communications with network devices.
+
+
+This demo serves as a practical introduction to network automation using RESTCONF. As you become more comfortable with these concepts, you can expand upon these scripts to include error handling, logging, and integration with other systems or orchestration tools, further enhancing the capabilities and resilience of your network automation tasks.
+
+
+Remember, automation is a journey, and each script you write brings you one step closer to a more efficient and reliable network. Happy automating!
+
 
 
