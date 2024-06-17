@@ -147,7 +147,13 @@ write memory
 
 Now, when you re-run *show running-config | include netconf*, you should see *netconf-yang* in the output.
 
-> **Note:** *write memory* and *copy running-config startup-config* are essentially the same command on Cisco IOS devices. They both serve the purpose of saving the current running configuration (in RAM) to the startup configuration (in NVRAM), ensuring that configuration changes persist across device reboots. 
+- Terminate the SSH session
+```bash
+exit
+```
+
+> **Note:** *write memory* and *copy running-config startup-config* are essentially the same command on Cisco IOS devices. They both serve the purpose of saving the current running configuration (in RAM) to the startup configuration (in NVRAM), ensuring that configuration changes persist across device reboots.
+
 
 
 <br>
