@@ -338,7 +338,7 @@ This should result in the output *Interface Loopback101 deleted successfully.*
 python3 create_interface.py
 ```
 
-This should result in *Interface Loopback101 created successfully."*
+This should result in *Interface Loopback101 created successfully.*
 
 <br>
 
