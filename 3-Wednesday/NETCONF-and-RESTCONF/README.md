@@ -115,7 +115,7 @@ First, you'll use a Python file to retrieve the running configuration from the C
 python3 display_running_config.py
 ```
 
-- Observe the output in the Terminal, which should look something like this (truncated for brevity):
+- Observe the output in the Terminal, which should look something like this (*greatly* truncated for brevity):
 
 Here is the RUNNING CONFIG returned from the NETCONF request:
 
@@ -129,7 +129,7 @@ The following programmability features are already enabled:
 -RESTCONF
 
 Thanks for stopping by.
-</banner></motd></banner><memory><free><low-watermark><processor>63709</processor></low-watermark></free></memory><call-home><contact-email-addr xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-call-home">sch-smart-licensing@cisco.com</contact-email-addr><tac-profile xmlns="http://cisc
+</banner></motd></banner><memory><free><low-watermark><processor>63709</processor></low-watermark></free></memory><call-home><contact-email-addr xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-call-home">sch-smart-licensing@cisco.com</contact-email-addr><tac-profile xmlns="http://cisco.com/ns/y
 
 <br>
 <br>
