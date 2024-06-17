@@ -181,7 +181,7 @@ python3 display_hostname.py
 
 
 
-### **Step 4**: Update the hostname with NECONF and a Python script
+### **Step 4**: Update and confirm the hostname with NETCONF and a Python script
 
 Now, you'll use a Python script to update the hostname on the Cat8000V running Cisco IOS XE.
 
