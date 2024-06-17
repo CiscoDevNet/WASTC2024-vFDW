@@ -10,15 +10,15 @@
 
 Learnes will access DevNet's [IOS XE on Cat8kv AlwaysOn sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/ios-xe-always-on) directly using the following information:
 
-    Cat8000v Host:
-        **Public URL**: devnetsandboxiosxe.cisco.com
-        **Username**: admin
-        Password: C1sco12345
-        RESTCONF port: 443
-        NETCONF port: 830
-        gRPC telemetry port: 57500
-        ssh port: 22
-        Example Connection: ssh admin@devnetsandboxiosxe.cisco.com
+Cat8000v Host:
+    **Public URL**: devnetsandboxiosxe.cisco.com
+    **Username**: admin
+    Password: C1sco12345
+    RESTCONF port: 443
+    NETCONF port: 830
+    gRPC telemetry port: 57500
+    ssh port: 22
+    Example Connection: ssh admin@devnetsandboxiosxe.cisco.com
 
 
 <br>
