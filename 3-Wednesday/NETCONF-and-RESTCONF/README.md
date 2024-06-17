@@ -286,8 +286,9 @@ python3 delete_interface.py
 
 This should result in the output *Interface Loopback101 deleted successfully.*
 
+<br>
 
-Now, (if needed) you can create the interface
+- Now, (if needed) you can create the interface
 
 ```bash
 python3 create_interface.py
