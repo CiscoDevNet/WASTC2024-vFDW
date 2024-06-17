@@ -218,13 +218,13 @@ Here, you use a Python script to display the interfaces on the Cat8000V running 
 
 - Open **interface_display.py** in your IDE and observe the contents. See URI with endpoint, the headers, and the GET request needed to be sent to return the interfaces.
 
-Observe how *response.json()* converts the JSON-formatted data from the response body into a Python dictionary (or list, depending on the JSON structure). *json.dumps* is used to serialize the Python dictionary interfaces back into a JSON-formatted string. The indent=2 argument is used to pretty-print the JSON with an indentation level of 2 spaces, making it more human-readable.
+Observe how *response.json()* converts the JSON-formatted data from the response body into a Python dictionary (or list, depending on the JSON structure). *json.dumps* is used to serialize the Python dictionary interfaces back into a JSON-formatted string. The *indent=2* argument is used to pretty-print the JSON with an indentation level of 2 spaces, making it more human-readable.
 
 > **Note:**
-> json.load reads JSON data from a file and converts it into a Python object.
-> json.loads reads JSON data from a string and converts it into a Python object.
-> json.dump writes a Python object to a file as JSON data.
-> json.dumps converts a Python object to a JSON string.
+> *json.load* reads JSON data from a file and converts it into a Python object.
+> *json.loads* reads JSON data from a string and converts it into a Python object.
+> *json.dump* writes a Python object to a file as JSON data.
+> *json.dumps* converts a Python object to a JSON string.
   
 
 - Run that script
