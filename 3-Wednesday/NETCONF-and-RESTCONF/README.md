@@ -26,7 +26,7 @@
   <br>
 - **ssh port**: 22
   <br>
-- **Example Connection**: ssh admin@devnetsandboxiosxe.cisco.com
+- **Example Connection**: 'ssh admin@devnetsandboxiosxe.cisco.com'
 
 
 <br>
