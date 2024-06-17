@@ -102,27 +102,7 @@ Modules:
 
 <br>
 
-
-### **Step 1**: Use a Python script to gather the running config from a router using NETCONF
-
-First, you'll use a Python file to retrieve the running configuration from the Cat8000V running Cisco IOS XE.
-
-- Open **display_running_config.py** in your IDE and observe the contents.
-
-- Run that script
-
-```bash
-python3 display_running_config.py
-```
-
-- Observe the output in the Terminal, which should look something like this (*greatly* truncated for brevity):
-
-![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/aaa12b16-ddbf-49e5-9410-74bc546fc9b3)
-
-<br>
-
-
-### **Step 2**: Confirm NETCONF is enabled in IOSXE running on the Cat8000v
+### **Step 1**: Confirm NETCONF is enabled in IOSXE running on the Cat8000v
 
 - SSH into device
 ```bash
@@ -161,9 +141,48 @@ exit
 
 > **Note:** *write memory* and *copy running-config startup-config* are essentially the same command on Cisco IOS devices. They both serve the purpose of saving the current running configuration (in RAM) to the startup configuration (in NVRAM), ensuring that configuration changes persist across device reboots.
 
+<br>
 
+
+### **Step 2**: Use a Python script to gather the running config from a router using NETCONF
+
+First, you'll use a Python file to retrieve the running configuration from the Cat8000V running Cisco IOS XE.
+
+- Open **display_running_config.py** in your IDE and observe the contents.
+
+- Run that script
+
+```bash
+python3 display_running_config.py
+```
+
+- Observe the output in the Terminal, which should look something like this (*greatly* truncated for brevity):
+
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/aaa12b16-ddbf-49e5-9410-74bc546fc9b3)
 
 <br>
+
+
+### **Step 3**: Use a Python script to gather the hostname from a router using NETCONF
+
+First, you'll use a Python file to retrieve the running configuration from the Cat8000V running Cisco IOS XE.
+
+- Open **hostname.py** in your IDE and observe the contents. Now, we are suing a filter to return *only* the hostname. We also include some Python logic to handle exceptions.
+
+- Run that script
+
+```bash
+python3 display_hostname.py
+```
+
+- Observe the output in the Terminal, which should look something like this (hostname may differ):
+
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/cca9ea6b-d66a-4c6e-9638-6295f2145c04)
+
+<br>
+
+
+
 
 ### **Step 3**: Open a new terminal, observe the client, and run the client
 
