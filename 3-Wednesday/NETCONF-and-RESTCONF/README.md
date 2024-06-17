@@ -117,22 +117,10 @@ python3 display_running_config.py
 
 - Observe the output in the Terminal, which should look something like this (*greatly* truncated for brevity):
 
-Here is the RUNNING CONFIG returned from the NETCONF request:
-
-<?xml version="1.0" encoding="UTF-8"?>
-<rpc-reply xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:11c857d0-b9c0-4023-8a40-4a8791810b50" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"><data><native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native"><version>17.12</version><boot-start-marker/><boot><system><bootfile><filename-list-ordered-by-user><filename>bootflash:packages.conf</filename></filename-list-ordered-by-user><filename-list><filename>bootflash:packages.conf</filename></filename-list></bootfile></system></boot><boot-end-marker/><banner><motd><banner>
-Welcome to the DevNet Sandbox for Cat8000V and IOS XE
-
-The following programmability features are already enabled:
-
--NETCONF
--RESTCONF
-
-Thanks for stopping by.
-</banner></motd></banner><memory><free><low-watermark><processor>63709</processor></low-watermark></free></memory><call-home><contact-email-addr xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-call-home">sch-smart-licensing@cisco.com</contact-email-addr><tac-profile xmlns="http://cisco.com/ns/y
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/aaa12b16-ddbf-49e5-9410-74bc546fc9b3)
 
 <br>
-<br>
+
 
 ### **Step 2**: Confirm NETCONF is enabled in IOSXE running on the Cat8000v
 
