@@ -234,7 +234,7 @@ Observe how *response.json()* converts the JSON-formatted data from the response
 - Run that script
 
 ```bash
-python3 interface_display.py
+python3 display_interfaces.py
 ```
 
 The (truncated) results should look something like this:
@@ -247,9 +247,16 @@ The (truncated) results should look something like this:
 <br>
 
 
-### **Step 6**: Monitor WebSocket activity using the Admin Panel
+### **Step 6**: Create an interface using a Python Script and RETCONF
 
-With the WebSocket server running in one terminal (python3 websocket_server.py) and the HTTP server running in the other (python3 -m http.server), you can now use the 
+Now, you use a Python script to create an interface on the Cat8000V running Cisco IOS XE.
+
+
+
+
+
+
+
 
 ### **Cleanup**
 
