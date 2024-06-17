@@ -312,7 +312,7 @@ Don't forget to choose **POST** and click **Send**.
 
 <br>
 
-- Navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000) and observe the second payload sent via Postman
+- Navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000) and observe the second payload sent via Postman (a refresh may be needed).
 
 ![image](https://github.com/xanderstevenson/websockets-and-webhooks/assets/27918923/f9144dd6-5f8c-4dea-a0e1-5da2f79c895b)
 
