@@ -8,9 +8,9 @@
 - IDE - [Visual Studio Code](https://code.visualstudio.com/Download) recommended
 - [Postman](https://www.postman.com/), either in the browser or desktop app
 
-Learnes will access DevNet's [IOS XE on Cat8kv AlwaysOn sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/ios-xe-always-on) directly using the following information:
+- Learners will access DevNet's [IOS XE on Cat8kv AlwaysOn sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/ios-xe-always-on) directly using the following information:
 
-Cat8000v Host:
+#### Cat8000v Host:
 
  **Public URL**: devnetsandboxiosxe.cisco.com
  **Username**: admin
