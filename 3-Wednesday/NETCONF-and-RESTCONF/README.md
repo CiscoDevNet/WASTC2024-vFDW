@@ -12,21 +12,21 @@
 
 #### Cat8000v Host:
 
- **Public URL**: devnetsandboxiosxe.cisco.com
+-**Public URL**: devnetsandboxiosxe.cisco.com
   <br>
- **Username**: admin
+- **Username**: admin
   <br>
- **Password**: C1sco12345
+- **Password**: C1sco12345
   <br>
- **RESTCONF port**: 443
+- **RESTCONF port**: 443
   <br>
- **NETCONF port**: 830
+- **NETCONF port**: 830
   <br>
- **gRPC telemetry port**: 57500
+- **gRPC telemetry port**: 57500
   <br>
- **ssh port**: 22
+- **ssh port**: 22
   <br>
- **Example Connection**: ssh admin@devnetsandboxiosxe.cisco.com
+- **Example Connection**: ssh admin@devnetsandboxiosxe.cisco.com
 
 
 <br>
