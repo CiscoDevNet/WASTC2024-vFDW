@@ -271,6 +271,7 @@ python 3create_interface.py
 
 If it was successful, you'll see an output of *Interface Loopback101 created successfully.* 
 
+<br>
 
 - However, you may receive an error showing the interface already exists. 
 
@@ -317,18 +318,13 @@ This should result in *Interface Loopback101 created successfully."*
 
 In this RESTCONF demo, we've explored how to interact with a Cisco IOS XE device using RESTCONF, which is a powerful protocol that leverages standard HTTP methods for network configuration and management. Through the use of Python scripts, we've demonstrated the process of displaying existing interfaces, creating a new interface, and deleting an interface when necessary.
 
-
 The interface_display.py script showcased the retrieval of interface data, while create_interface.py and delete_interface.py allowed us to modify the device's configuration by adding or removing an interface. These operations are fundamental for network engineers who are looking to automate and streamline their workflows.
-
 
 By successfully creating the Loopback101 interface, we've seen how RESTCONF can be used to make precise changes to a device's configuration. Conversely, the deletion script provided a way to clean up configurations, which is just as important in maintaining a manageable network environment.
 
-
 It's important to note that while we've bypassed SSL certificate verification in our scripts for simplicity and learning purposes, in a production environment, proper SSL certificates should be used, and verification should be enabled to ensure secure communications with network devices.
 
-
 This demo serves as a practical introduction to network automation using RESTCONF. As you become more comfortable with these concepts, you can expand upon these scripts to include error handling, logging, and integration with other systems or orchestration tools, further enhancing the capabilities and resilience of your network automation tasks.
-
 
 Remember, automation is a journey, and each script you write brings you one step closer to a more efficient and reliable network. Happy automating!
 
