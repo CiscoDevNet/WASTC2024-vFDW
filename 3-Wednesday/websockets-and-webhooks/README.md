@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- [Python](https://www.python.org/downloads/) 3.7 or higher (tested on Python 3.10.14)
+- [Python](https://www.python.org/downloads/) 3.7 or higher (tested on Python 3.10.14 and 3.11.9)
 - OS: Mac, Windows, Linux should all be fine
 - Web browser
 - IDE - [Visual Studio Code](https://code.visualstudio.com/Download) recommended
