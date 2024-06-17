@@ -10,9 +10,10 @@
 
 - Learners will access DevNet's [IOS XE on Cat8kv AlwaysOn sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/ios-xe-always-on) directly using the following information:
 
+- - -
 #### Sandbox details
 
-#### Cat8000v Host:
+Cat8000v Host:
 
 - **Public URL**: devnetsandboxiosxe.cisco.com
   <br>
@@ -28,7 +29,7 @@
   <br>
 - **ssh port**: 22
   <br>
-
+- - -
 
 <br>
 
