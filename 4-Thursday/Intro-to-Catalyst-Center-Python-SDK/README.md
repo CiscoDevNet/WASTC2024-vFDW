@@ -103,17 +103,22 @@ When working with an SDK, one of the firat things you should do is to take a loo
 [Cisco Catalyst Center - Python SDK docs](https://developer.cisco.com/docs/dna-center/python-sdk-getting-started/)
 ```
 
+<br>
+
 We saw at the top of this README that we are using the sandbox with Catalyst Center version 2.3.3.6
 
 - Locate docs for v2.3.3.6 and change to that version
 
 ![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/1f0acf75-17b9-46f4-b54c-52a5bf366696)
 
+<br>
+
 - In the menu panel on the left, navigate to SKDs > Python SDK > [Quickstart](https://developer.cisco.com/docs/dna-center/2-3-3/quickstart/)
 
-Slowly scroll all the way to the bottom, scanning and skimming the majot sections
+Slowly scroll all the way to the bottom, scanning and skimming the major sections
 
-![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/fb101342-6887-47ad-9bbb-3cf370b46cd1)
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/ea1a8e7d-2a99-41ac-a426-7ffb361be3f8)
+
 
 
 > **Note:** *write memory* and *copy running-config startup-config* are essentially the same command on Cisco IOS devices. They both serve the purpose of saving the current running configuration (in RAM) to the startup configuration (in NVRAM), ensuring that configuration changes persist across device reboots.
