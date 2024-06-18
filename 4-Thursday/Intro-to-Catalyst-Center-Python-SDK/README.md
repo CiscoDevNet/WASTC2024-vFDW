@@ -21,11 +21,7 @@ Cat8000v Host:
   <br>
 - **Password**: Cisco123!
   <br>
-- **Notes**:
-
-Accept the self-signed certificate
-
-Allow browser notifications
+- **Notes**: 1) Accept the self-signed certificate 2) Allow browser notifications
 
 In this sandbox, developers can:
 
