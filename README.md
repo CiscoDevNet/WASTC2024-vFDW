@@ -12,9 +12,8 @@
 4. [NETCONF & RESTCONF for Cisco IOS XE](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/3-Wednesday/NETCONF-and-RESTCONF) - 1 hour + lab - Adrian/Aaron presents and Adrian does the lab, Aaron and Alex proctor 
 
 #### Wednesday
-5. [Intro to Ansible](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/2-Tuesday/Intro-to-Ansible) - 1 hour + lab - Alex presents and lab, Adrian and Aaron proctor
-6. [Intro to Terraform](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/2-Tuesday/Intro-to-Terraform) - 1 hour + lab - Alex presents and lab, Adrian and Aaron proctor
-
+5. [Intro to Terraform](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/2-Tuesday/Intro-to-Terraform) - 1 hour + lab - Alex presents and lab, Adrian and Aaron proctor
+6. [Intro to Ansible](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/2-Tuesday/Intro-to-Ansible) - 1 hour + lab - Alex presents and Adrian does the lab, Aaron proctors
 
 #### Thursday
 7. [Intro to Catalyst Center Python SDK](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/4-Thursday/Intro-to-Catalyst-Center-Python-SDK) - 1 hour + lab - Adrian presents and lab, Alex and Aaron proctor
