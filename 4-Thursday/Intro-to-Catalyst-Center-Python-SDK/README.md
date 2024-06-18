@@ -156,23 +156,21 @@ The results in the Terminal should read **Catalyst Center client initialized suc
 <br>
 
 
+### **Step 3**: Retrieve and Display Devices:
+
+Now you will demonstrate how to list network devices managed by Catalyst Center, using a Python script.
 
 
-
-
-### **Step 3**: ?
-
-Now, you'll use a Python script to retrieve the hostname from the Cat8000V running Cisco IOS XE.
-
-- Open **display_hostname.py** in your IDE and observe the contents. Now, we are suing a filter to return *only* the hostname. We also include some Python logic to handle exceptions.
+- Open **display_devices.py** in your IDE and observe the contents. Notice on line 1 how it's importing the *initialize client* function from the *initialize_sdk_client.py* module. It then uses it to initialize and runs the *list_network_devices()* function to retrieve and print out the devices and their details.
 
 ```bash
-python3 display_hostname.py
+python3 display_devices.py
 ```
 
-- Observe the output in the Terminal, which should look something like this (hostname may differ):
+- Observe the output in the Terminal, which should look something like this (device details may differ):
 
-![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/cca9ea6b-d66a-4c6e-9638-6295f2145c04)
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/075661f6-c936-4666-9938-6de901431c20)
+
 
 <br>
 
