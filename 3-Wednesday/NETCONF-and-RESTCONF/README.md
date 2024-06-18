@@ -287,7 +287,7 @@ The (truncated) results should look something like this:
 <br>
 
 
-### **Step 6**: Create an interface using a Python Script and RETCONF
+### **Step 3**: Create an interface using a Python Script and RETCONF
 
 Now, you use a Python script to create interface on the Cat8000V running Cisco IOS XE.
 
