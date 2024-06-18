@@ -144,7 +144,9 @@ This module importation is a great feature of Python.
 python3 initialize_sdk_client.py
 ```
 
-The results in the Termina should read **Catalyst Center client initialized successfully!**
+The results in the Terminal should read **Catalyst Center client initialized successfully!**
+
+<br>
 
 > **Note:** The purpose of this script is to initialize a client connection to a Cisco DNA Center using the dnacentersdk Python library. This client will enable you to interact with Cisco DNA Center's API, which allows for the automation and management of network devices and services provided by Cisco DNA Center.
 >
