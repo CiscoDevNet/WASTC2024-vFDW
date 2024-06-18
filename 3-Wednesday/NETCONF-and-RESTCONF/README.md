@@ -344,6 +344,15 @@ This should result in *Interface Loopback101 created successfully.*
 <br>
 
 
+### **Call to Action**: Create an interface using a Python Script and RETCONF
+
+Try importing [cisco-ios-xe-postman-collections](https://developer.cisco.com/codeexchange/github/repo/jeremycohoe/cisco-ios-xe-postman-collections/) and practice sending requests in Postman.
+
+
+
+<br>
+
+
 ### **RESTCONF Conclusion**
 
 In this RESTCONF demo, we've explored how to interact with a Cisco IOS XE device using RESTCONF, which is a powerful protocol that leverages standard HTTP methods for network configuration and management. Through the use of Python scripts, we've demonstrated the process of displaying existing interfaces, creating a new interface, and deleting an interface when necessary.
