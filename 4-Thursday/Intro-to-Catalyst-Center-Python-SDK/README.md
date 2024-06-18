@@ -127,6 +127,10 @@ Take a few moments and slowly scroll all the way to the bottom of the page, scan
 
 Notice how the *config* is imported on line two and then used on lines 7-9
 
+![config](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/57c78b2c-dc5f-4c97-a7a1-43c8c558930f)
+
+
+<br>
 
 - Open **config.py** and observe what is being imported into **initilaize_sdk_client.py**.
 
