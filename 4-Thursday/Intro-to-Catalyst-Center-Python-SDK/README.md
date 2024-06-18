@@ -61,19 +61,9 @@ code .
 <br>
 
 
-### **Step 2**: Initilaize the Catalyst Center client
+### **Step 2**: Create and activate a Python virtual environment
 
-- Open the **initilaize_sdk_client.py** file and observe its contents
-
-Notice how the *config* is imported on line two and then used on lines 7-9
-
-
-- Open **config.py** and observe what is being imported into **initilaize_sdk_client.py**.
-
-This module importation is a great feature of Python.
-
-
-  
+- Mac/Linux
 ```bash
 python3 -m venv venv
 source venv/bin/activate
@@ -133,21 +123,16 @@ Take a few moments and slowly scroll all the way to the bottom of the page, scan
 <br>
 
 
-### **Step 2**: ?
+### **Step 2**: Initilaize the Catalyst Center client
 
-First, you'll use a Python script to retrieve the running configuration from the Cat8000V running Cisco IOS XE.
+- Open the **initilaize_sdk_client.py** file and observe its contents
 
-- Open **display_running_config.py** in your IDE and observe the contents.
+Notice how the *config* is imported on line two and then used on lines 7-9
 
-- Run that script
 
-```bash
-python3 display_running_config.py
-```
+- Open **config.py** and observe what is being imported into **initilaize_sdk_client.py**.
 
-- Observe the output in the Terminal, which should look something like this (*greatly* truncated for brevity):
-
-![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/aaa12b16-ddbf-49e5-9410-74bc546fc9b3)
+This module importation is a great feature of Python.
 
 <br>
 
