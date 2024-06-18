@@ -209,6 +209,7 @@ This script will return a list where each entry represents a specific configurat
 3. Key: Specific setting or configuration key within the category.
 4. Value: Actual value or configuration details associated with the key.
 
+<br>
 
 - Run that script
 
