@@ -37,15 +37,6 @@ In this sandbox, developers can:
 
 Welcome to the NETCONF & RESTCONF for Cisco IOS XE - Demo, an interactive learning experience designed to introduce you to the world of network automation using two of the most prevalent protocols in the industry: NETCONF (Network Configuration Protocol) and RESTCONF (Representational State Transfer Configuration Protocol).
 
-In this session, we will embark on a journey through the configuration and management of network devices using these protocols, which are integral to modern network operations. NETCONF provides a mechanism for installing, manipulating, and deleting the configuration of network devices, while RESTCONF allows for similar operations through a more web-friendly HTTP-based interface.
-
-Our sandbox environment, the IOS XE on Cat8kv AlwaysOn sandbox, will serve as our testing ground. Here, you will have the opportunity to apply your knowledge in a safe and controlled setting, allowing you to explore the capabilities of these protocols without the risk of affecting a live network.
-
-Before we dive into the hands-on portion of the demo, ensure you have the prerequisites in place. These include a suitable Python environment, an integrated development environment (IDE) like Visual Studio Code, and tools like Postman for API interaction. With these tools at your disposal, you'll be well-equipped to follow along with the exercises and gain practical experience with NETCONF and RESTCONF.
-
-As we proceed, remember that the goal of this demo is not just to execute commands but to understand the principles behind them. By the end of this session, you should feel more confident in your ability to automate network configurations and appreciate the efficiency gains that can be achieved through these powerful protocols.
-
-So, let's set up our environment, roll up our sleeves, and get ready to take a significant step toward grokking network automation.
 
 <br>
 
@@ -58,7 +49,7 @@ So, let's set up our environment, roll up our sleeves, and get ready to take a s
 
 ```bash
 git clone https://github.com/CiscoDevNet/WASTC2024-vFDW.git
-cd WASTC2024-vFDW/3-Wednesday//NETCONF-and-RESTCONF
+cd WASTC2024-vFDW/4-Thursday/Intro-to-Catalyst-Center-Python-SDK
 ```
 <br>
 
@@ -94,21 +85,14 @@ pip3 install -r requirements.txt
 <br>
 <br>
 
-## NETCONF Demo
+## Catalyst Center Python SDK
 
 ### **Introduction**: 
 
-Welcome, everyone! Today, we're going to dive into the world of network automation using NETCONF (Network Configuration Protocol) with Cisco IOS XE devices. NETCONF is a powerful protocol that allows us to programmatically manage and configure network devices, making our workflows more efficient and less error-prone. In this hands-on demo, we will explore how to use NETCONF to:
-
-- Retrieve the running configuration of a network device.
-- Extract specific configuration details, such as the hostname.
-- Update the device configuration, specifically changing the hostname.
-
-By the end of this session, you'll have a practical understanding of how to interact with network devices using NETCONF, which is a crucial skill for modern network engineers and IT professionals.*WebSocket Protocol**: Implements the WebSocket protocol for both server-side and client-side communication
-
+Welcome, everyone! 
 <br>
 
-### **Step 1**: Confirm NETCONF is enabled in IOSXE running on the Cat8000v
+### **Step 1**: ?
 
 - SSH into device
 ```bash
@@ -150,7 +134,7 @@ exit
 <br>
 
 
-### **Step 2**: Use a Python script to gather the running config from a router using NETCONF
+### **Step 2**: ?
 
 First, you'll use a Python script to retrieve the running configuration from the Cat8000V running Cisco IOS XE.
 
@@ -169,7 +153,7 @@ python3 display_running_config.py
 <br>
 
 
-### **Step 3**: Use a Python script to gather the hostname from a router using NETCONF
+### **Step 3**: ?
 
 Now, you'll use a Python script to retrieve the hostname from the Cat8000V running Cisco IOS XE.
 
@@ -187,7 +171,7 @@ python3 display_hostname.py
 
 
 
-### **Step 4**: Update and confirm the hostname with NETCONF and a Python script
+### **Step 4**: ?
 
 Now, you'll use a Python script to update the hostname on the Cat8000V running Cisco IOS XE.
 
@@ -207,17 +191,9 @@ The output should look something like this:
 <br>
 
 
-### **NETCONF Conclusion**
+### ** Conclusion**
 
-As we wrap up the NETCONF section of our demo, let's take a moment to reflect on what we've accomplished. We've successfully connected to a Cisco IOS XE device using NETCONF, a protocol designed specifically for network configuration management. We've seen firsthand how NETCONF provides a structured and secure method for reading and writing device configurations.
 
-Through the exercises, we've retrieved the running configuration, extracted specific details like the hostname, and even updated the device configuration. These tasks, which might have been time-consuming and prone to human error if done manually, were performed swiftly and accurately with the help of our Python scripts.
-
-This section has demonstrated the power of automation and the efficiency that NETCONF brings to network operations. By leveraging this protocol, network engineers can automate repetitive tasks, reduce configuration errors, and ensure consistency across the network infrastructure.
-
-As you move forward, remember that the principles and practices you've learned here can be applied to a wide range of network automation challenges. The ability to programmatically interact with network devices is a critical skill in the modern networking landscape, and mastering NETCONF is a significant step in that direction.
-
-Keep experimenting with NETCONF, explore its full potential, and integrate it into your network automation toolkit. The knowledge you've gained today is a solid foundation for your journey toward advanced network automation.
 
 <br>
 <br>
