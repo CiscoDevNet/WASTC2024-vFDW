@@ -116,10 +116,9 @@ We saw at the top of this README that we are using the sandbox with Catalyst Cen
 
 - In the menu panel on the left, navigate to SDKs > Python SDK > [Quickstart](https://developer.cisco.com/docs/dna-center/2-3-3/quickstart/)
 
-Take a few moments and slowly scroll all the way to the bottom of the page, scanning and skimming the major sections. This will give you a broad and basic overview of what you need to consider when using the Python SDK for this version of Catalyst Center.
-
 ![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/ea1a8e7d-2a99-41ac-a426-7ffb361be3f8)
 
+Take a few moments and slowly scroll all the way to the bottom of the page, scanning and skimming the major sections. This will give you a broad and basic overview of what you need to consider when using the Python SDK for this version of Catalyst Center.
 
 <br>
 
