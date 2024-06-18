@@ -296,7 +296,7 @@ Now, you use a Python script to create interface on the Cat8000V running Cisco I
 - Create interface Loopback101
 
 ```
-python 3create_interface.py
+python3 create_interface.py
 ```
 
 If it was successful, you'll see an output of *Interface Loopback101 created successfully.* 
