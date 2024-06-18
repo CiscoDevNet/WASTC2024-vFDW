@@ -125,7 +125,7 @@ Take a few moments and slowly scroll all the way to the bottom of the page, scan
 
 - Open the **initilaize_sdk_client.py** file and observe its contents
 
-Notice how the *config* is imported on line two and then used on lines 7-9
+Notice how the **dnacentersdk** module is imported. We installed that in our virtual environment when we used the command **pip install -r requirements.txt** previously. Also noticed how *config* is imported on line two and then used on lines 7-9:
 
 ![config](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/57c78b2c-dc5f-4c97-a7a1-43c8c558930f)
 
@@ -137,6 +137,23 @@ Notice how the *config* is imported on line two and then used on lines 7-9
 This module importation is a great feature of Python.
 
 <br>
+
+- Run the Python file to initialize the Catalyst Center client
+
+```bash
+python3 initialize_sdk_client.py
+```
+
+> **Note:** The purpose of this script is to initialize a client connection to a Cisco DNA Center using the dnacentersdk Python library. This client will enable you to interact with Cisco DNA Center's API, which allows for the automation and management of network devices and services provided by Cisco DNA Center.
+>
+> It is your starting point for leveraging the power of Cisco DNA Center API to enhance and automate network management tasks, providing numerous benefits in terms of efficiency, reliability, and scalability.
+
+
+<br>
+
+
+
+
 
 
 ### **Step 3**: ?
