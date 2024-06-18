@@ -1,6 +1,11 @@
 import requests
 import json
 from requests.auth import HTTPBasicAuth
+import warnings
+from urllib3.exceptions import InsecureRequestWarning
+
+# Suppress only the single InsecureRequestWarning from urllib3 needed for this case.
+warnings.simplefilter("ignore", InsecureRequestWarning)
 
 # Define device information
 router = {
@@ -27,6 +32,15 @@ response = requests.get(
     verify=False,
 )
 
-# Print response
-interfaces = response.json()
-print(json.dumps(interfaces, indent=2))
+# Check response status code
+if response.status_code == 200:
+    try:
+        # Attempt to parse JSON response
+        interfaces = response.json()
+        print(json.dumps(interfaces, indent=2))
+    except json.JSONDecodeError as e:
+        print(f"Error decoding JSON: {e}")
+        print(f"Response content: {response.text}")
+else:
+    print(f"Request failed with status code: {response.status_code}")
+    print(f"Response content: {response.text}")
