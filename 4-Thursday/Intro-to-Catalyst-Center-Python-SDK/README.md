@@ -67,7 +67,7 @@ code .
 
 Notice how the *config* is imported on line two and then used on lines 7-9
 
-```
+- - -
 from dnacentersdk import DNACenterAPI
 import **config**
 
@@ -77,7 +77,9 @@ def initialize_client():
         base_url=**config**.API_URL,
         username=**config**.USERNAME,
         password=**config**.PASSWORD,
-```
+- - -
+
+
   
 ```bash
 python3 -m venv venv
