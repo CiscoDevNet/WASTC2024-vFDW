@@ -8,12 +8,12 @@
 - IDE - [Visual Studio Code](https://code.visualstudio.com/Download) recommended
 - [Postman](https://www.postman.com/), either in the browser or desktop app
 
-- Learners will access DevNet's [Catalyst Center Always-On v2.3.3.6](https://devnetsandbox.cisco.com/DevNet/catalog/Catalyst-Center-Always-On)) directly using the following information:
+- Learners will access DevNet's [Catalyst Center Always-On v2.3.3.6 sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/Catalyst-Center-Always-On) directly using the following information:
 
 - - -
 #### Sandbox details
 
-Cat8000v Host:
+Cisco Catalyst Center (Formerly known as Cisco Digital Network Architecture (DNA) Center) v2.3.3.6:
 
 - **Public URL**: https://sandboxdnac.cisco.com
   <br>
