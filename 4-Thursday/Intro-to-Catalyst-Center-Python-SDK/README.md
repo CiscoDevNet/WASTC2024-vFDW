@@ -176,21 +176,23 @@ python3 display_devices.py
 
 
 
-### **Step 4**: ?
+### **Step 4**: Fetch Traffic Data
 
-Now, you'll use a Python script to update the hostname on the Cat8000V running Cisco IOS XE.
 
-- Open **update_hostname.py** in your IDE and observe the contents. See the different functions for displaying and setting the hostname. Also observe the way we use input() to ask the user for a hostname.
+
+Now, you'll use a Python script to illustrate how to retrieve network traffic statistics.
+
+- Open **monitor_traffic.py** in your IDE and observe the contents. See the different functions for displaying and setting the hostname. Also observe the way we use input() to ask the user for a hostname.
 
 - Run that script
 
 ```bash
-python3 websocket_client.py
+python3 monitor_traffic.py
 ```
 
 The output should look something like this:
 
-![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/50551a4f-d788-4d6d-a040-b1ba3eb2a042)
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/b7f63b7f-f2e9-4418-b8f6-3ab3e245fedc)
 
 
 <br>
