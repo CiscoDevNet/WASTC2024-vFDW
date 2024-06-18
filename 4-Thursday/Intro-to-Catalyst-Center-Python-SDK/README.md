@@ -99,10 +99,8 @@ Welcome, everyone!
 
 When working with an SDK, one of the firat things you should do is to take a look at the docs.
 
-- Open the docs in your browser
-```bash
-[Cisco Catalyst Center - Python SDK docs](https://developer.cisco.com/docs/dna-center/python-sdk-getting-started/)
-```
+- Open the docs in your browser: [Cisco Catalyst Center - Python SDK docs](https://developer.cisco.com/docs/dna-center/python-sdk-getting-started/)
+
 
 <br>
 
