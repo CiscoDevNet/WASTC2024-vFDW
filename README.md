@@ -10,13 +10,13 @@
 
 
 #### Tuesday
-3. [Intro to Ansible](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/2-Tuesday/Intro-to-Ansible) - 1 hour + lab - Alex presents and Adrian for the lab
-4. [Intro to Terraform](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/2-Tuesday/Intro-to-Terraform) - 1 hour + lab - Alex presents and Adrian on the lab
+3. [Websockets and Webhooks](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/3-Wednesday/websockets-and-webhooks) - 1 hour + lab - Adrian presents and Alex for the lab
+4. [NETCONF & RESTCONF for Cisco IOS XE](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/3-Wednesday/NETCONF-and-RESTCONF) - 1 hour + lab - Adrian/Aaron presents and Alex for the lab
 
 
 #### Wednesday
-5. [Websockets and Webhooks](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/3-Wednesday/websockets-and-webhooks) - 1 hour + lab - Adrian presents and Alex for the lab
-6. [NETCONF & RESTCONF for Cisco IOS XE](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/3-Wednesday/NETCONF-and-RESTCONF) - 1 hour + lab - Adrian/Aaron presents and Alex for the lab
+5. [Intro to Ansible](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/2-Tuesday/Intro-to-Ansible) - 1 hour + lab - Alex presents and Adrian for the lab
+6. [Intro to Terraform](https://github.com/CiscoDevNet/WASTC2024-vFDW/tree/main/2-Tuesday/Intro-to-Terraform) - 1 hour + lab - Alex presents and Adrian on the lab
 
 
 #### Thursday
