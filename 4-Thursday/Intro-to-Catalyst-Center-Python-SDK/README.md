@@ -67,17 +67,10 @@ code .
 
 Notice how the *config* is imported on line two and then used on lines 7-9
 
-- - -
-from dnacentersdk import DNACenterAPI
-import **config**
 
+- Open **config.py** and observe what is being imported into **initilaize_sdk_client.py**.
 
-def initialize_client():
-    client = DNACenterAPI(
-        base_url=**config**.API_URL,
-        username=**config**.USERNAME,
-        password=**config**.PASSWORD,
-- - -
+This module importation is a great feature of Python.
 
 
   
