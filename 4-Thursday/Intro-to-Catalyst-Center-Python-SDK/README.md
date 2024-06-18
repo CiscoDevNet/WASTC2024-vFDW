@@ -35,7 +35,7 @@ In this sandbox, developers can:
 
 ## Prologue
 
-blah blah blah.
+Welcome to the "Intro to Catalyst Center Python SDK" tutorial! In this tutorial, you will learn how to leverage the Cisco Catalyst Center Python SDK to interact with Cisco DNA Center's API. This SDK allows developers to automate and manage network devices and services provided by Cisco DNA Center programmatically.
 
 
 <br>
@@ -91,7 +91,8 @@ pip3 install -r requirements.txt
 
 ### **Introduction**: 
 
-Welcome, everyone! 
+Welcome to the Catalyst Center Python SDK demo! This tutorial will guide you through using the Cisco Catalyst Center Python SDK to interact with Cisco DNA Center's API. You will perform various tasks such as initializing the SDK client, retrieving device information, monitoring traffic, and fetching network configurations.
+
 
 <br>
 
@@ -171,13 +172,10 @@ python3 display_devices.py
 
 ![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/075661f6-c936-4666-9938-6de901431c20)
 
-
 <br>
 
 
-
 ### **Step 4**: Fetch Traffic Data
-
 
 
 Now, you'll use a Python script to illustrate how to retrieve network traffic statistics.
@@ -198,9 +196,36 @@ The output should look something like this:
 <br>
 
 
+### **Step 5**: Retrieve network setting and configurations
+
+Gather structured view of various network settings and configurations managed by Cisco Catalyst Center, useful for monitoring and managing network profiles and configurations programmatically.
+
+- Open **network_config.py** in your IDE and observe the contents. Observe the import. GET request, try/except error handling, and other components.
+
+This script will return a list where each entry represents a specific configuration instance fetched from Cisco Catalyst Center, containing:
+  
+1. Instance UUID: Unique identifier for the configuration instance.
+2. Type: Indicates the setting or configuration category.
+3. Key: Specific setting or configuration key within the category.
+4. Value: Actual value or configuration details associated with the key.
+
+
+- Run that script
+
+```bash
+python3 network_config.py
+```
+
+The output should look something like this:
+
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/c8c2f0a8-8f05-4719-b1cf-d306e15f26be)
+
+
+This script is useful for network administrators or developers working with Cisco DNA Center who need to retrieve and view existing network profiles configured within their network infrastructure.
+
+<br>
+
+
 ### ** Conclusion**
 
-
-
-<br>
-<br>
+In conclusion, this tutorial provides a comprehensive introduction to using the Cisco Catalyst Center Python SDK. By leveraging this SDK, developers can automate network management tasks, enhance operational efficiency, and gain deeper insights into network infrastructure managed by Cisco DNA Center. Start exploring and innovating with Cisco's Catalyst Center SDK today!
