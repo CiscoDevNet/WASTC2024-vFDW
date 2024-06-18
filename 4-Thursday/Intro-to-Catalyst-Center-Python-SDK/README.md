@@ -35,7 +35,7 @@ In this sandbox, developers can:
 
 ## Prologue
 
-Welcome to the NETCONF & RESTCONF for Cisco IOS XE - Demo, an interactive learning experience designed to introduce you to the world of network automation using two of the most prevalent protocols in the industry: NETCONF (Network Configuration Protocol) and RESTCONF (Representational State Transfer Configuration Protocol).
+blah blah blah.
 
 
 <br>
@@ -85,49 +85,36 @@ pip3 install -r requirements.txt
 <br>
 <br>
 
-## Catalyst Center Python SDK
+
+
+## Catalyst Center Python SDK demo
 
 ### **Introduction**: 
 
 Welcome, everyone! 
 <br>
 
-### **Step 1**: ?
+### **Step 1**: Find and observe the Docs for the SDK
 
-- SSH into device
+When working with an SDK, one of the firat things you should do is to take a look at the docs.
+
+- Open the docs in your browser
 ```bash
-ssh admin@devnetsandboxiosxe.cisco.com
+[Cisco Catalyst Center - Python SDK docs](https://developer.cisco.com/docs/dna-center/python-sdk-getting-started/)
 ```
 
-- Provide password
-```bash
-C1sco12345
-```
+We saw at the top of this README that we are using the sandbox with Catalyst Center version 2.3.3.6
 
-- Check is NETCONF is enabled
-```bash
-show running-config | include netconf
-```
+- Locate docs for v2.3.3.6 and change to that version
 
-- If NETCONF is enabled, you will see the **netconf-yang** command in the running configuration output.
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/1f0acf75-17b9-46f4-b54c-52a5bf366696)
 
-- **If** NETCONF is *not* enabled, follow these steps to enable it:
+- In the menu panel on the left, navigate to SKDs > Python SDK > [Quickstart](https://developer.cisco.com/docs/dna-center/2-3-3/quickstart/)
 
-Enter Global Configuration Mode, enable NETCONF, and write to memory:
+Slowly scroll all the way to the bottom, scanning and skimming the majot sections
 
-```bash
-configure terminal
-netconf-yang
-end
-write memory
-```
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/fb101342-6887-47ad-9bbb-3cf370b46cd1)
 
-Now, when you re-run *show running-config | include netconf*, you should see *netconf-yang* in the output.
-
-- Terminate the SSH session
-```bash
-exit
-```
 
 > **Note:** *write memory* and *copy running-config startup-config* are essentially the same command on Cisco IOS devices. They both serve the purpose of saving the current running configuration (in RAM) to the startup configuration (in NVRAM), ensuring that configuration changes persist across device reboots.
 
