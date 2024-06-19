@@ -83,7 +83,7 @@ Open each of them in your IDE and observe the functions and data.
 
 ### **Step 1**: Run the Flask app
 
-- Run the following command from within **WASTC2024-vFDW/1-Monday/Intro-to-REST-APIs**
+- Run the following command from within the **WASTC2024-vFDW/1-Monday/Intro-to-REST-APIs** directory:
 
 ```bash
 python3 -m app.main
@@ -97,18 +97,90 @@ python3 -m app.main
     "message": "Welcome to the Intro to REST APIs workshop!"
 }
 ```
+<br>
 
 
-### **Step 2**: Observe and run the server
+### **Step 2**: Unit testing our app
 
-- Open **python websocket_server.py** and observe it's contents. 
+Let's take a step back and consider an extremely important concept in app development: testing.
 
-- Run the Server
+The **WASTC2024-vFDW/1-Monday/Intro-to-REST-APIs/app/tests/test_example_api.py** file is included to demonstrate how to write unit tests for your REST API. Testing is an essential part of software development, ensuring that your code works as expected and helps you catch bugs early.
+
+Here’s a detailed explanation of the **test_example_api.py** file and how to run the tests.
+
+This file contains unit tests for the example API you created. The tests use the **pytest** framework to verify the functionality of your API endpoints.
+
+
+```
+import pytest
+from app.main import app
+
+@pytest.fixture
+def client():
+    with app.test_client() as client:
+        yield client
+
+def test_hello(client):
+    rv = client.get('/api/hello')
+    json_data = rv.get_json()
+    assert rv.status_code == 200
+    assert json_data == {"message": "Hello, world!"}
+```
+
+
+### Explanation
+
+#### Importing Modules:
+
+pytest: The testing framework.
+app: The Flask application instance from your main.py.
+
+
+#### Client Fixture:
+
+The client fixture sets up a test client using app.test_client(). This client allows you to simulate requests to the application without running a server.
+
+
+#### Test Function:
+
+- **test_hello(client**): This function tests the /api/hello endpoint.
+- **client.get('/api/hello')**: Sends a GET request to the /api/hello endpoint.
+- **rv.get_json()**: Parses the response data as JSON.
+- **assert rv.status_code == 200**: Checks if the response status code is 200 (OK).
+- **assert json_data == {"message": "Hello, world!"}**: Checks if the response data matches the expected JSON.
+
+
+#### Running the Tests
 
 ```bash
-python3 websocket_server.py
+pytest
 ```
-<br>
+
+#### Expected Output
+
+When you run pytest, you should see output indicating that the tests passed, something like:
+
+```
+============================= test session starts =============================
+platform darwin -- Python 3.x.y, pytest-6.x.x, py-1.x.x, pluggy-0.x.x
+rootdir: /path/to/intro-to-rest-apis
+collected 1 item                                                               
+
+app/tests/test_example_api.py .                                          [100%]
+
+============================== 1 passed in 0.12s ==============================
+```
+
+#### Benefits of Testing
+
+- Ensures Correct Functionality: Automated tests verify that your code works as expected.
+- Detects Bugs Early: Catch issues before they make it to production.
+- Facilitates Refactoring: Safe to refactor code, knowing that tests will catch regressions.
+- Improves Code Quality: Encourages writing modular and testable code.
+- By running test_example_api.py, you're following best practices in software development and ensuring that you understand the importance of testing in REST API development.
+
+
+
 
 ### **Step 3**: Open a new terminal, observe the client, and run the client
 
