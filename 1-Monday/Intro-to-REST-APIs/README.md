@@ -139,11 +139,13 @@ def test_hello(client):
 > **Note:** open the link and take a few moments to observe the docs. Get in the habit of *at least* skimming through the Get Started, Quickstart, How To, or similar sections.
 2. app: The Flask application instance from your main.py.
 
+<br>
 
 #### Client Fixture:
 
 The client fixture sets up a test client using app.test_client(). This client allows you to simulate requests to the application without running a server.
 
+<br>
 
 #### Test Function:
 
@@ -153,12 +155,15 @@ The client fixture sets up a test client using app.test_client(). This client al
 - **assert rv.status_code == 200**: Checks if the response status code is 200 (OK).
 - **assert json_data == {"message": "Hello, world!"}**: Checks if the response data matches the expected JSON.
 
+<br>
 
 #### Running the Tests
 
 ```bash
 pytest
 ```
+
+<br>
 
 #### Expected Output
 
@@ -174,6 +179,8 @@ app/tests/test_example_api.py .                                          [100%]
 
 ============================== 1 passed in 0.12s ==============================
 ```
+
+<br>
 
 #### Benefits of Testing
 
