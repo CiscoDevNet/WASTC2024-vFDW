@@ -243,3 +243,18 @@ Terminate the Flask App in the Terminal with Ctrl+C or similar command
 
 This workshop introduced you to the fundamentals of REST APIs using Python and Flask. By exploring basic API functionalities, testing strategies, and enhancements, you've gained practical insights into building and testing RESTful services. Further exploration and experimentation with the provided code will solidify your understanding of REST API concepts and their application in real-world scenarios.
 
+
+## Additional Resources
+
+[WASTC-vFDW](https://www.postman.com/alexstev/workspace/wastc-vfdw/)
+
+- This workspace in Postman demonstrates the basic functionality of REST APIs
+
+- Postman can be run in a web browser or as a standalone app
+
+- It’s pronounced Postman, not Postman
+
+- Have a look!
+
+
+
