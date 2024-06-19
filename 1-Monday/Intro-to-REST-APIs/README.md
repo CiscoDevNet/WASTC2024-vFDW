@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- [Python](https://www.python.org/downloads/) 3.7 or higher (tested on Python 3.10.14 and 3.11.9)
+- [Python](https://www.python.org/downloads/) 3.8 or higher (tested on Python 3.10.14 and 3.11.9)
 - OS: Mac, Windows, Linux should all be fine
 - Web browser
 - IDE - [Visual Studio Code](https://code.visualstudio.com/Download) recommended
@@ -97,6 +97,9 @@ python3 -m app.main
     "message": "Welcome to the Intro to REST APIs workshop!"
 }
 ```
+
+- Terminate the app my entering Ctrl + C or similar command.
+
 <br>
 
 
@@ -132,7 +135,8 @@ def test_hello(client):
 
 #### Importing Modules:
 
-pytest: The testing framework.
+[pytest](https://docs.pytest.org/en/8.2.x/): The testing framework. 
+> **Note:** open the link and take a few moments to observe the docs. Get in the habit of *at least* skimming through the Get Started, Quickstart, How To, or similar sections.
 app: The Flask application instance from your main.py.
 
 
