@@ -12,7 +12,7 @@
 
 ## Prologue
 
-lol
+This repository contains a hands-on demonstration of REST APIs using Python and Flask. You will explore basic API functionality, learn about unit testing, and gain practical insights into building and testing RESTful services.
 
 <br>
 
@@ -60,22 +60,30 @@ pip3 install -r requirements.txt
 <br>
 <br>
 
-## Rntro to REST APIs Demo
+## Intro to REST APIs Demo
+
+## First part of Demo
 
 ### **Introduction**: 
 
+This demo showcases a simple Flask application that exposes RESTful APIs for basic functionalities such as retrieving a random quote and performing calculations. Here's an overview of the project structure:
+
+<br>
+
 Here is our file structure:
 
-![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/514cab4a-8125-4eb6-a875-6eaa0c6053bd)
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/e0fe1066-1478-479c-af8d-e2763a9afc6f)
+
+<br>
 
 And here are the key files and their purpose:
 
-- **app/main.py**: Entry point of the application.
-- **app/api/example_api.py**: Example API implementation.
-- **app/utils/data.py**: Utility functions for data handling.
-- **app/tests/test_example_api.py**: Unit tests for the example API.
+- **main.py**: Entry point of the application.
+- **/api/example_api.py**: Example API implementation.
+- **utils/data.py**: Utility functions for data handling.
+- **/tests/test_example_api.py**: Unit tests for the example API.
 
-Open each of them in your IDE and observe the functions and data.
+Open each of them (in the **/app** directory) in your IDE and observe the functions and data.
 
 
 <br>
@@ -190,113 +198,48 @@ app/tests/test_example_api.py .                                          [100%]
 - Improves Code Quality: Encourages writing modular and testable code.
 - By running test_example_api.py, you're following best practices in software development and ensuring that you understand the importance of testing in REST API development.
 
-
-
-
-### **Step 3**: Open a new terminal, observe the client, and run the client
-
-> **Note:** Every time you open a new Terminal in these labs, ensure you are in the correct directory (in this case **websockets-and-webhooks/websockets**) and that the virtual environment is also enabled in the new Terminal.
 <br>
 
-- Open **websocket_client.py** and observe it's contents. 
 
-- Run the Client
+## First part of Demo
+
+### **Introduction**: 
+
+> **Note:** From this point on, we will be dealing with files in the **/app2** directory.
+
+Welcome to Part 2 of the Intro to REST APIs Demo! In this section, we will explore additional functionalities and enhancements to our Flask application. Building upon the foundation from Part 1, we'll delve deeper into interactive features and showcase practical use cases of RESTful APIs.
+
+<br>
+
+### **Step 1**: Observe the new code for this part
+
+
+- Open **/app2/main.py** and observe it's contents.
+- Open **index.html** and observe it's contents.
+
+<br>
+
+### **Step 2**: Run the new Flask app
 
 ```bash
-python3 websocket_client.py
+python3 -m app2.main
 ```
 
-You should see the following output: **Received from server: Echo: Hello, World!**
-<br>
-<br>
+- Navigate back to [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser and observe the output, which should look something like this:
 
-### **Step 4**: Change the message the client will send
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/b2188d20-d30d-40d9-b8d3-1b0d7681faa1)
 
-- Open **websocket_client.py** in your IDE and change line 8, inserting your own message. Don't forget to save it!
-  
-```
-await websocket.send("<Insert your message here>")
-```
+- Clicking on "Get Quote" will produce a random quote from **main.py** 
 
-- Send the new message to the server
-  
-```bash
-python3 websocket_client.py
-```
+- Clicking on "Calculate" after entering numbers and choosing the operation, will output the results of the calculation. This is based on logic located at the end of index.html
 
-Your new message should now be displayed.
-
-
-- Navigate back to the terminal where the **websocket server** is running and observe a log of all messages sent, e.g.
-
-**Received message: Hello, World!**
-<br>
-**Received message: Hello, World!**
-<br>
-**Received message: I am good**
-<br>
-**Received message: Hello, World!**
-<br>
-**Received message: Hello, World!**
-<br>
-**Received message: Hello, World!**
-<br>
-**Received message: yo!**
-<br>
-
-- Leave the websocket server running.
-
-  <br>
-
-### **Step 5**: Communicate through the websocket via a browser
-
-- Open websocket_server.**html** and observe the HTML with JavaScript code.
-
-- In the terminal where the websocket client was running previously (websocket server should still be running in another terminal window), run the HTTP server:
-
-```bash
-python3 -m http.server
-```
-
-> **Note:** If prompted, allow incoming network connections
-
-- Navigate in your browser of choice to [http://localhost:8000/websocket_client.html](http://localhost:8000/websocket_client.html), enter a message of your choice and click "Send". The message should be Echoed in the browser.
-
-- Navigate to the terminal where **websocket server** is running and you should see the messages you've sent through the browser, e.g.:
-
-**Received message: ok** 
-<br>
-**Received message: Adrian is a genius**
-<br>
-**Received message: hahaha**
-
-<br>
-
-### **Step 6**: Monitor WebSocket activity using the Admin Panel
-
-With the WebSocket server running in one terminal (python3 websocket_server.py) and the HTTP server running in the other (python3 -m http.server), you can now use the Admin Panel to monitor client connections and messages in real-time.
-
-- Prepare the Admin Panel: open the **admin_panel.html**, **js/admin_panel.js**, and **styles/admin_panel.css** files are in the IDE.
-
-- Access the Admin Panel: Open your web browser and navigate to [http://localhost:8000/admin_panel.html](http://localhost:8000/admin_panel.html)
-
-- Interact with the Admin Panel: Use the "Show Clients" and "Show Messages" buttons to view the list of connected WebSocket clients and the history of messages exchanged. The Admin Panel will update the statistics as new clients connect and messages are sent via the WebSocket Client at [http://localhost:8000/websocket_client.html](http://localhost:8000/websocket_client.html)
-
-*You just need to click on 'Show Messages' a few times to see the updated list.*
-
-- Observe Server Activity: As you interact with the Admin Panel, observe the terminal where the WebSocket server is running. You should see logs indicating that the server is processing requests from the Admin Panel, such as fetching the list of clients or retrieving message history.
 
 ### **Cleanup**
 
-Terminate the Websocker Server and HTTP Server in their respective Terminals with Ctrl+C or similar command
+Terminate the Flask App in the Terminal with Ctrl+C or similar command
 
 
 ### **Conclusion**
 
-In conclusion, this tutorial has guided you through setting up and interacting with WebSocket servers and clients using Python. You've learned to modify client messages, communicate via WebSocket in a browser, and monitor activity using an admin panel. These skills are foundational for developing real-time web applications that require efficient bi-directional communication.
+This workshop introduced you to the fundamentals of REST APIs using Python and Flask. By exploring basic API functionalities, testing strategies, and enhancements, you've gained practical insights into building and testing RESTful services. Further exploration and experimentation with the provided code will solidify your understanding of REST API concepts and their application in real-world scenarios.
 
-<br>
-
-
-<br>
-<br>
