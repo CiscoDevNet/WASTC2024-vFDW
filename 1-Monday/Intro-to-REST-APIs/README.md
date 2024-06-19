@@ -68,10 +68,10 @@ pip3 install -r requirements.txt
 ![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/514cab4a-8125-4eb6-a875-6eaa0c6053bd)
 
 
-app/main.py: Entry point of the application.
-app/api/example_api.py: Example API implementation.
-app/utils/data.py: Utility functions for data handling.
-app/tests/test_example_api.py: Unit tests for the example API.
+- **app/main.py**: Entry point of the application.
+- **app/api/example_api.py**: Example API implementation.
+- **app/utils/data.py**: Utility functions for data handling.
+- **app/tests/test_example_api.py**: Unit tests for the example API.
 
 <br>
 
