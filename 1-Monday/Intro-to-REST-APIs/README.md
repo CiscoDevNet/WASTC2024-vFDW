@@ -135,9 +135,9 @@ def test_hello(client):
 
 #### Importing Modules:
 
-[pytest](https://docs.pytest.org/en/8.2.x/): The testing framework. 
+1. [pytest](https://docs.pytest.org/en/8.2.x/): The testing framework. 
 > **Note:** open the link and take a few moments to observe the docs. Get in the habit of *at least* skimming through the Get Started, Quickstart, How To, or similar sections.
-app: The Flask application instance from your main.py.
+2. app: The Flask application instance from your main.py.
 
 
 #### Client Fixture:
