@@ -1,4 +1,4 @@
-# Intro to Rest APIs Demo
+# Intro to Rest APIs - Lab
 
 ## Prerequisites
 
