@@ -89,7 +89,7 @@ docker --version
 
 > **Note:** I'm on a Mac and I've found installing Docker Desktop is best. When I open the app on my Desktop, then Docker Engine starts automatically. 
 
-
+<br>
 
 ### **Step 6**: Install Dependencies
 
