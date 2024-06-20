@@ -124,7 +124,16 @@ cd terraform-docker-demo
 
 ```
 # Configure the Docker provider
-provider "kreuzwerker/docker" {
+terraform {
+  required_providers {
+    docker = {
+      source  = "kreuzwerker/docker"
+      version = "~> 2.13.0"
+    }
+  }
+}
+
+provider "docker" {
   host = "unix:///var/run/docker.sock"
 }
 ```
@@ -165,7 +174,16 @@ When finished, **main.tf** should look as such:
 
 ```
 # Configure the Docker provider
-provider "kreuzwerker/docker" {
+terraform {
+  required_providers {
+    docker = {
+      source  = "kreuzwerker/docker"
+      version = "~> 2.13.0"
+    }
+  }
+}
+
+provider "docker" {
   host = "unix:///var/run/docker.sock"
 }
 
