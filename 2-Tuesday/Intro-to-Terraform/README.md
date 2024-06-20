@@ -70,7 +70,7 @@ Windows:
 Extract the downloaded zip file and add the executable to your PATH.
 <br>
 
--Verify Installation:
+- Verify Installation:
 
 ```bash
 terraform -v
