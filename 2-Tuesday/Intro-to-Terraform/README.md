@@ -78,7 +78,7 @@ terraform -v
 <br>
 
 
-### **Step 4**: Install Docker
+### **Step 5**: Install Docker
 
 - Download Docker: Visit the Docker [downloads page](https://docs.docker.com/desktop/) and download the appropriate package for your operating system. Install Docker following the instructions for your operating system.
 
@@ -91,7 +91,7 @@ docker --version
 
 
 
-### **Step 5**: Install Dependencies
+### **Step 6**: Install Dependencies
 
 ```bash
 pip3 install -r requirements.txt
@@ -194,32 +194,35 @@ resource "docker_container" "nginx" {
 
 
 
-### **Step 2**: Unit testing our app
+### **Step 2**: Initilize Terraform, then plan and apply the configuration
 
-Let's take a step back and consider an extremely important concept in app development: testing.
-
-The **WASTC2024-vFDW/1-Monday/Intro-to-REST-APIs/app/tests/test_example_api.py** file is included to demonstrate how to write unit tests for your REST API. Testing is an essential part of software development, ensuring that your code works as expected and helps you catch bugs early.
-
-Here’s a detailed explanation of the **test_example_api.py** file and how to run the tests.
-
-This file contains unit tests for the example API you created. The tests use the **pytest** framework to verify the functionality of your API endpoints.
-
-
+- Initialize the Terraform working directory:
 ```
-import pytest
-from app.main import app
-
-@pytest.fixture
-def client():
-    with app.test_client() as client:
-        yield client
-
-def test_hello(client):
-    rv = client.get('/api/hello')
-    json_data = rv.get_json()
-    assert rv.status_code == 200
-    assert json_data == {"message": "Hello, world!"}
+bash
+terraform init
 ```
+<br>
+
+
+- Plan and Apply the Configuration
+
+Generate and review the execution plan:
+
+```bash
+terraform plan
+```
+<br>
+
+- Apply the configuration to create the infrastructure:
+
+```bash
+terraform apply
+```
+
+Note: Type yes when prompted to confirm the apply.
+
+<br>
+
 
 
 ### Explanation
