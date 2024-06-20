@@ -197,8 +197,8 @@ resource "docker_container" "nginx" {
 ### **Step 2**: Initilize Terraform, then plan and apply the configuration
 
 - Initialize the Terraform working directory:
-```
-bash
+- 
+```bash
 terraform init
 ```
 <br>
