@@ -59,6 +59,9 @@ So, let's set up our environment, roll up our sleeves, and get ready to take a s
 
 ```bash
 git clone https://github.com/CiscoDevNet/WASTC2024-vFDW.git
+```
+
+```bash
 cd WASTC2024-vFDW/3-Wednesday//NETCONF-and-RESTCONF
 ```
 <br>
