@@ -246,7 +246,9 @@ terraform destroy
 
 ### **Conclusion**
 
-This workshop introduced you to the fundamentals of REST APIs using Python and Flask. By exploring basic API functionalities, testing strategies, and enhancements, you've gained practical insights into building and testing RESTful services. Further exploration and experimentation with the provided code will solidify your understanding of REST API concepts and their application in real-world scenarios.
+In this lab, you learned the basics of Terraform, including how to install it, configure a provider for Docker, define infrastructure as code, and apply and destroy the configuration. Terraform, combined with Docker, provides a powerful way to manage local development environments and infrastructure consistently.
+
+Feel free to explore more Terraform features and advanced configurations to deepen your understanding and improve your infrastructure management skills. Happy coding!
 
 <br>
 
