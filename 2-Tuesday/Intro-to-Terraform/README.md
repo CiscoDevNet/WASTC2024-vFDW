@@ -78,10 +78,18 @@ terraform -v
 
 ### **Step 4**: Install Docker
 
+- Download Docker: Visit the Docker [downloads page](https://docs.docker.com/desktop/) and download the appropriate package for your operating system. Install Docker following the instructions for your operating system.
+
+- Verify Installation:
+```bash
+docker --version
+```
+
+> **Note:** I'm on a Mac and I've found installing Docker Desktop is best. When I open the app on my Desktop, then Docker Engine starts automatically. 
 
 
 
-### **Step 4**: Install Dependencies
+### **Step 5**: Install Dependencies
 
 ```bash
 pip3 install -r requirements.txt
@@ -89,55 +97,98 @@ pip3 install -r requirements.txt
 <br>
 <br>
 
-## Intro to REST APIs Demo
 
-## First part of Demo
+
+## Intro to Teraform
+
 
 ### **Introduction**: 
 
-This demo showcases a simple Flask application that exposes RESTful APIs for basic functionalities such as retrieving a random quote and performing calculations. Here's an overview of the project structure:
-
-<br>
-
-Here is our file structure:
-
-![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/e0fe1066-1478-479c-af8d-e2763a9afc6f)
-
-<br>
-
-And here are the key files and their purpose:
-
-- **main.py**: Entry point of the application.
-- **/api/example_api.py**: Example API implementation.
-- **utils/data.py**: Utility functions for data handling.
-- **/tests/test_example_api.py**: Unit tests for the example API.
-
-Open each of them (in the **/app** directory) in your IDE and observe the functions and data.
-
+In this demo, you will create a simple local infrastructure using Terraform and Docker. The infrastructure will include a Docker network and a Docker container running Nginx.
 
 <br>
 
 
-### **Step 1**: Run the Flask app
+### **Step 1**: Change to the Working Directory and populate the configuration with the Terraform provider
 
-- Run the following command from within the **WASTC2024-vFDW/1-Monday/Intro-to-REST-APIs** directory:
+- Change into the working directory
 
 ```bash
-python3 -m app.main
+cd terraform-docker-demo
 ```
 <br>
 
-- Navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser and observe the output, which should look something like this:
+- Copy this **provider info** into **main.tf** (don't forget to save it):
 
 ```
-{
-    "message": "Welcome to the Intro to REST APIs workshop!"
+# Configure the Docker provider
+provider "docker" {
+  host = "unix:///var/run/docker.sock"
+}
+```
+<br>
+
+- Copy this **network configuration** info into **main.tf** (don't forget to save it):
+
+```
+# Define a Docker network
+resource "docker_network" "demo_network" {
+  name = "demo-network"
+}
+```
+<br>
+
+- Copy this **container configuration** info into **main.tf** (don't forget to save it):
+
+```
+# Define a Docker container running Nginx
+resource "docker_container" "nginx" {
+  image = "nginx:latest"
+  name  = "demo-nginx"
+
+  networks_advanced {
+    name = docker_network.demo_network.name
+  }
+
+  ports {
+    internal = 80
+    external = 8080
+  }
+}
+```
+<br>
+
+
+When finished, **main.tf** should look as such:
+
+```
+# Configure the Docker provider
+provider "docker" {
+  host = "unix:///var/run/docker.sock"
+}
+
+# Define a Docker network
+resource "docker_network" "demo_network" {
+  name = "demo-network"
+}
+
+# Define a Docker container running Nginx
+resource "docker_container" "nginx" {
+  image = "nginx:latest"
+  name  = "demo-nginx"
+
+  networks_advanced {
+    name = docker_network.demo_network.name
+  }
+
+  ports {
+    internal = 80
+    external = 8080
+  }
 }
 ```
 
-- Terminate the app my entering Ctrl + C or similar command.
 
-<br>
 
 
 ### **Step 2**: Unit testing our app
