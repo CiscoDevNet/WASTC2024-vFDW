@@ -57,6 +57,7 @@ venv\Scripts\activate
 ### **Step 4**: Install Terraform
 
 - Download Terraform: Visit the Terraform [downloads page](https://developer.hashicorp.com/terraform/install) and download the appropriate package for your operating system.
+<br>
 
 - Install Terraform:
 
@@ -67,13 +68,14 @@ sudo unzip terraform_<VERSION>_linux_amd64.zip -d /usr/local/bin/
 
 Windows:
 Extract the downloaded zip file and add the executable to your PATH.
+<br>
 
-
-1Verify Installation:
+-Verify Installation:
 
 ```bash
 terraform -v
 ```
+<br>
 
 
 ### **Step 4**: Install Docker
