@@ -39,6 +39,9 @@ By the end of this demo, you will have a clear understanding of how Websockets a
 
 ```bash
 git clone https://github.com/CiscoDevNet/WASTC2024-vFDW.git
+```
+
+```bash
 cd WASTC2024-vFDW/3-Wednesday/websockets-and-webhooks
 ```
 <br>
