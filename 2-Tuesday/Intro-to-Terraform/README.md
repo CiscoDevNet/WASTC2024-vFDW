@@ -242,7 +242,7 @@ terraform destroy
 
 > **Note:** Type yes when prompted to confirm the destroy.
 
-
+<br>
 
 ### **Conclusion**
 
