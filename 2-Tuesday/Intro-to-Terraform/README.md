@@ -1,4 +1,4 @@
-# Intro to Rest APIs - Lab
+# Intro to Terraform - Lab
 
 ## Prerequisites
 
