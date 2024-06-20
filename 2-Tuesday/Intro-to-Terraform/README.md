@@ -106,7 +106,7 @@ pip3 install -r requirements.txt
 
 ### **Introduction**: 
 
-In this demo, you will create a simple local infrastructure using Terraform and Docker. The infrastructure will include a Docker network and a Docker container running Nginx.
+In this demo, you will create a simple local infrastructure using Terraform and Docker. The infrastructure will include a Docker network and a Docker container running NGINX.
 
 <br>
 
@@ -224,105 +224,24 @@ Note: Type yes when prompted to confirm the apply.
 <br>
 
 
+### **Step 3**: Verify the Infrastructure
 
-### Explanation
-
-#### Importing Modules:
-
-1. [pytest](https://docs.pytest.org/en/8.2.x/): The testing framework. 
-> **Note:** open the link and take a few moments to observe the docs. Get in the habit of *at least* skimming through the Get Started, Quickstart, How To, or similar sections.
-2. app: The Flask application instance from your main.py.
+- Open your web browser and navigate to [http://localhost:8080](http://localhost:8080).
+- You should see the NGINX welcome page, indicating that the Docker container is running and accessible.
 
 <br>
 
-#### Client Fixture:
 
-The client fixture sets up a test client using app.test_client(). This client allows you to simulate requests to the application without running a server.
+### **Step 4**: Cleanup
 
-<br>
-
-#### Test Function:
-
-- **test_hello(client**): This function tests the /api/hello endpoint.
-- **client.get('/api/hello')**: Sends a GET request to the /api/hello endpoint.
-- **rv.get_json()**: Parses the response data as JSON.
-- **assert rv.status_code == 200**: Checks if the response status code is 200 (OK).
-- **assert json_data == {"message": "Hello, world!"}**: Checks if the response data matches the expected JSON.
-
-<br>
-
-#### Running the Tests
+- Destroy the created infrastructure:
 
 ```bash
-pytest
+terraform destroy
 ```
 
-<br>
+> **Note:** Type yes when prompted to confirm the destroy.
 
-#### Expected Output
-
-When you run pytest, you should see output indicating that the tests passed, something like:
-
-```
-============================= test session starts =============================
-platform darwin -- Python 3.x.y, pytest-6.x.x, py-1.x.x, pluggy-0.x.x
-rootdir: /path/to/intro-to-rest-apis
-collected 1 item                                                               
-
-app/tests/test_example_api.py .                                          [100%]
-
-============================== 1 passed in 0.12s ==============================
-```
-
-<br>
-
-#### Benefits of Testing
-
-- Ensures Correct Functionality: Automated tests verify that your code works as expected.
-- Detects Bugs Early: Catch issues before they make it to production.
-- Facilitates Refactoring: Safe to refactor code, knowing that tests will catch regressions.
-- Improves Code Quality: Encourages writing modular and testable code.
-- By running test_example_api.py, you're following best practices in software development and ensuring that you understand the importance of testing in REST API development.
-
-<br>
-
-
-## First part of Demo
-
-### **Introduction**: 
-
-> **Note:** From this point on, we will be dealing with files in the **/app2** directory.
-
-Welcome to Part 2 of the Intro to REST APIs Demo! In this section, we will explore additional functionalities and enhancements to our Flask application. Building upon the foundation from Part 1, we'll delve deeper into interactive features and showcase practical use cases of RESTful APIs.
-
-<br>
-
-### **Step 1**: Observe the new code for this part
-
-
-- Open **/app2/main.py** and observe it's contents.
-- Open **index.html** and observe it's contents.
-
-<br>
-
-### **Step 2**: Run the new Flask app
-
-```bash
-python3 -m app2.main
-```
-
-- Navigate back to [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser and observe the output, which should look something like this:
-
-![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/b2188d20-d30d-40d9-b8d3-1b0d7681faa1)
-
-- Clicking on "Get Quote" will produce a random quote from **main.py** 
-
-- Clicking on "Calculate" after entering numbers and choosing the operation, will output the results of the calculation. This is based on logic located at the end of index.html
-
-
-### **Cleanup**
-
-Terminate the Flask App in the Terminal with Ctrl+C or similar command
 
 
 ### **Conclusion**
@@ -333,12 +252,3 @@ This workshop introduced you to the fundamentals of REST APIs using Python and F
 
 ## Additional Resources
 
-[WASTC-vFDW](https://www.postman.com/alexstev/workspace/wastc-vfdw/)
-
-- This workspace in Postman demonstrates the basic functionality of REST APIs
-
-- Postman can be run in a web browser or as a standalone app
-
-- It’s pronounced Postman, not Postman
-
-- Have a look!
