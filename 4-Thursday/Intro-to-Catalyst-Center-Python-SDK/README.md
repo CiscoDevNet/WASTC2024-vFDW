@@ -49,6 +49,9 @@ Welcome to the "Intro to Catalyst Center Python SDK" tutorial! In this tutorial,
 
 ```bash
 git clone https://github.com/CiscoDevNet/WASTC2024-vFDW.git
+```
+
+```bash
 cd WASTC2024-vFDW/4-Thursday/Intro-to-Catalyst-Center-Python-SDK
 ```
 <br>
