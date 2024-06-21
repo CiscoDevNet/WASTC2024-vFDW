@@ -180,14 +180,15 @@ pytest
 When you run pytest, you should see output indicating that the tests passed, something like:
 
 ```
-============================= test session starts =============================
-platform darwin -- Python 3.x.y, pytest-6.x.x, py-1.x.x, pluggy-0.x.x
-rootdir: /path/to/intro-to-rest-apis
-collected 1 item                                                               
+==================================== test session starts ====================================
+platform darwin -- Python 3.11.9, pytest-8.2.2, pluggy-1.5.0
+rootdir: /Users/alexstev/WASTC2024-vFDW/1-Monday/Intro-to-REST-APIs
+collected 2 items                                                                           
 
-app/tests/test_example_api.py .                                          [100%]
+app/tests/test_example_api.py .                                                       [ 50%]
+app2/tests/test_example_api.py .                                                      [100%]
 
-============================== 1 passed in 0.12s ==============================
+===================================== 2 passed in 0.24s =====================================
 ```
 
 <br>
