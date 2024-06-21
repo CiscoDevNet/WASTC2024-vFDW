@@ -27,7 +27,7 @@ Terraform is an open-source tool that allows you to define and provision infrast
 git clone https://github.com/CiscoDevNet/WASTC2024-vFDW.git
 ```
 ```bash
-cd WASTC2024-vFDW/3-Monday/Intro-to-Terraform
+cd WASTC2024-vFDW/3-Wednesday/Intro-to-Terraform
 ```
 <br>
 
@@ -106,108 +106,53 @@ pip3 install -r requirements.txt
 
 ### **Introduction**: 
 
-In this demo, you will create a simple local infrastructure using Terraform and Docker. The infrastructure will include a Docker network and a Docker container running NGINX.
+The goal of this lab is to use Terraform to manage local files, which will help you understand the basics of infrastructure as code without the need for cloud providers.
 
 <br>
 
 
-### **Step 1**: Change to the Working Directory and populate the configuration with the Terraform provider
+### **Step 1**: Populate the Terraform configuration files
 
-- Change into the working directory
-
-```bash
-cd terraform-docker-demo
-```
-<br>
-
-- Copy this **provider info** into **main.tf** (don't forget to save it):
+- Populate **main.tf** with this configuration (don't forget to save it):
 
 ```
-# Configure the Docker provider
-terraform {
-  required_providers {
-    docker = {
-      source  = "kreuzwerker/docker"
-      version = "~> 2.13.0"
-    }
-  }
+resource "local_file" "hello_world" {
+  filename = "${path.module}/hello.txt"
+  content  = "Hello, World!"
 }
 
-provider "docker" {
-  host = "unix:///var/run/docker.sock"
+resource "local_file" "dynamic_file" {
+  count    = var.file_count
+  filename = "${path.module}/file-${count.index}.txt"
+  content  = "This is file number ${count.index + 1}"
 }
 ```
 <br>
 
-- Copy this **network configuration** info into **main.tf** (don't forget to save it):
+- Populate **variables.tf** with this configuration (don't forget to save it):
 
 ```
-# Define a Docker network
-resource "docker_network" "demo_network" {
-  name = "demo-network"
-}
-```
-<br>
-
-- Copy this **container configuration** info into **main.tf** (don't forget to save it):
-
-```
-# Define a Docker container running Nginx
-resource "docker_container" "nginx" {
-  image = "nginx:latest"
-  name  = "demo-nginx"
-
-  networks_advanced {
-    name = docker_network.demo_network.name
-  }
-
-  ports {
-    internal = 80
-    external = 8081
-  }
+variable "file_count" {
+  description = "The number of files to create"
+  default     = 3
 }
 ```
 <br>
 
 
-When finished, **main.tf** should look as such:
+- Populate **outputs** with this configuration (don't forget to save it):
 
 ```
-# Configure the Docker provider
-terraform {
-  required_providers {
-    docker = {
-      source  = "kreuzwerker/docker"
-      version = "~> 2.13.0"
-    }
-  }
+output "hello_world_file" {
+  value = local_file.hello_world.filename
+  description = "The path of the 'Hello, World!' file"
 }
 
-provider "docker" {
-  host = "unix:///var/run/docker.sock"
-}
-
-# Define a Docker network
-resource "docker_network" "demo_network" {
-  name = "demo-network"
-}
-
-# Define a Docker container running Nginx
-resource "docker_container" "nginx" {
-  image = "nginx:latest"
-  name  = "demo-nginx"
-
-  networks_advanced {
-    name = docker_network.demo_network.name
-  }
-
-  ports {
-    internal = 80
-    external = 8081
-  }
+output "dynamic_files" {
+  value = [for f in local_file.dynamic_file : f.filename]
+  description = "The paths of the dynamically created files"
 }
 ```
-
 <br>
 
 
