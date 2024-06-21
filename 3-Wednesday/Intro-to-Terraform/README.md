@@ -311,31 +311,31 @@ As you continue to explore Terraform, remember that the principles you've learne
 
 
 
-- You can also run Terraform on the HashiCorp SaaS platform, which has a [free tier](https://app.terraform.io/public/signup/account).
+- You can also **run Terraform on the HashiCorp SaaS platform**, which has a [free tier](https://app.terraform.io/public/signup/account).
 
 <br>
 
-- Terraform Providers from Cisco DevNet
+- **Terraform Providers from Cisco DevNet**
 
 See the [Terraform Providers for Cisco technologies and devices be found at this URL](https://registry.terraform.io/search/providers?namespace=CiscoDevNet)
 
 
 <br>
 
-- Terraform at Cisco
+- **Terraform at Cisco**
 
 At Cisco DevNet, your main hub to lean about Terraform is [Cisco with Terraform](https://developer.cisco.com/automation-terraform/).
 
 
  <br>
 
-- Terraform and Infrastructure as Code
+- **Terraform and Infrastructure as Code**
 
 Visit [Terraform and Infrastructure as Code](https://developer.cisco.com/iac/) for providers, Ansible collections, NSO NEDs, and to learn how Cisco enables IaC across the entire network fabric.
 
 <br>
 
-- Terraform Learning Labs
+- **Terraform Learning Labs**
 
 The best place to practice your Terraform skills in the [DevNet Learning Labs](https://developer.cisco.com/learning/search/?contentType=track,module,lab&keyword=Terraform&sortBy=luceneScore).
 
