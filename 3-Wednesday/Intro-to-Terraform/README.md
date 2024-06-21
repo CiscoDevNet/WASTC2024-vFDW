@@ -135,7 +135,7 @@ terraform -v
 
 ### **Introduction**: 
 
-The goal of this lab is to use Terraform to manage local files, which will help you understand the basics of infrastructure as code without the need for cloud providers.
+Welcome to our "Intro to Terraform" session! Today, we're going to explore the powerful world of Infrastructure as Code (IaC) using Terraform, a tool that allows us to define and manage infrastructure with simple, declarative code. Whether you're a network engineer or an IT educator, you'll discover how Terraform can streamline your workflows and ensure consistency across environments. Get ready to dive into a hands-on lab that will give you a taste of Terraform's capabilities without the need for any cloud providers. Let's embark on this journey to automate and innovate the way we handle our infrastructure!
 
 <br>
 
@@ -300,8 +300,22 @@ It's generally not recommended to delete the state files unless you are intentio
 <br>
 
 
-### ** Step 5: Modify our configuration
+### **Step 5**: Modify our configuration
 
+In this step, we'll be making changes to our Terraform configuration to explore more of its features. We'll introduce new elements such as data sources, conditional resource creation, and module usage. This will give us a chance to see how Terraform handles more complex scenarios and how we can use it to create flexible, dynamic configurations.
+
+
+By modifying the existing files and adding new elements, we'll learn how to:
+
+
+* Use data sources to fetch and compute data for use in our resources.
+* Conditionally create resources based on input variables.
+* Define and use modules to organize and reuse code.
+* Manage dependencies between resources to ensure they are created in the correct order.
+
+Let's get started by updating our main.tf, variables.tf, and outputs.tf files with the new configurations and see Terraform in action as it applies these changes to our local environment.
+
+<br>
 
 - replace the code in **main.tf** with this:
 
@@ -442,7 +456,8 @@ The plan output is Terraform's way of showing you what it intends to do based on
 
 ### **Conclusion**
 
-Thank you for participating in our interactive Terraform lab! By now, you should have a foundational understanding of how Terraform can be used to manage and provision infrastructure through code, even in a local context. We've seen how Terraform can create, update, and delete resources in a predictable and efficient manner. 
+Thank you for participating in our interactive Terraform lab! By now, you should have a foundational understanding of how Terraform can be used to manage and provision infrastructure through code, even in a local context. We've seen how Terraform can create, update, and delete resources in a predictable and efficient manner.
+
 
 As you continue to explore Terraform, remember that the principles you've learned today are just the beginning. There's a vast ecosystem out there for you to harness, and the skills you've acquired will serve as a solid base for managing real-world cloud infrastructure. Keep experimenting, keep learning, and most importantly, have fun automating your infrastructure!
 
