@@ -53,7 +53,7 @@ venv\Scripts\activate
 <br>
 
 
-### **Step 3**: Install Terraform
+### **Step 3**: Install Terraform and verify installation
 
 Install Terraform (there are two ways to do this)
 
@@ -115,7 +115,10 @@ Extract the downloaded zip file and add the executable to your PATH.
 
 <br>
 
-- Verify Installation:
+<br>
+<br>
+
+Verify Installation:
 
 ```bash
 terraform -v
