@@ -248,7 +248,7 @@ Check the directory and you should see that all of these files have been removed
 
 <br>
 
-You;ll notice two files remain in your directory:
+- You'll notice two files remain in your directory:
 
 1. **terraform.tfstate**
 
@@ -259,13 +259,11 @@ This is the Terraform state file. Terraform uses this file to keep track of the 
 
 This is a backup of the previous state file. Terraform automatically creates this backup file each time the state is written to the terraform.tfstate file. This happens when you successfully run terraform apply or when you run terraform refresh. The backup file ensures that you have a way to recover the previous state in case something goes wrong with the current state.
 
+<br>
 
 When you remove these files, you effectively delete Terraform's record of the current and previous states of your infrastructure. Without the state file, Terraform can no longer accurately determine the actual state of the resources it manages. This could lead to several issues, such as:
 
-
-Terraform might try to create resources that already exist because it has no record of their existence.
-Terraform might not be able to destroy resources because it doesn't know about them.
-You might encounter discrepancies between your actual infrastructure and what Terraform believes the infrastructure should be.
+Terraform might try to create resources that already exist because it has no record of their existence. Terraform might not be able to destroy resources because it doesn't know about them. You might encounter discrepancies between your actual infrastructure and what Terraform believes the infrastructure should be.
 
 It's generally not recommended to delete the state files unless you are intentionally trying to reset Terraform's knowledge of your infrastructure, and you are sure that the infrastructure managed by the state file is no longer needed or can be safely reconstructed. Always handle state files with care, and consider using state backends that offer state locking and versioning for better state management and safety.
 
