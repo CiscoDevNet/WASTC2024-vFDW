@@ -78,20 +78,7 @@ terraform -v
 <br>
 
 
-### **Step 5**: Install Docker
-
-- Download Docker: Visit the Docker [downloads page](https://docs.docker.com/desktop/) and download the appropriate package for your operating system. Install Docker following the instructions for your operating system.
-
-- Verify Installation:
-```bash
-docker --version
-```
-
-> **Note:** I'm on a Mac and I've found installing Docker Desktop is best. When I open the app on my Desktop, then Docker Engine starts automatically. 
-
-<br>
-
-### **Step 6**: Install Dependencies
+### **Step 5**: Install Dependencies
 
 ```bash
 pip3 install -r requirements.txt
