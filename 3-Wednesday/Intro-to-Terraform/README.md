@@ -56,8 +56,9 @@ venv\Scripts\activate
 
 ### **Step 3**: Install Terraform
 
-- Install Terraform (there are tow ways to do this)
+- Install Terraform (there are two ways to do this)
 
+<br>
 
 1. Install with a package manager
 
