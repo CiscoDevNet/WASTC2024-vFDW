@@ -108,6 +108,21 @@ python3 -m app.main
 }
 ```
 
+- Now, instead of just a static message from **main.py**, let's import data from a function in another module.
+
+In **main.py**, uncomment lines 3 and 15, save the file and reload the webpage (you may need to do it twice). The results should now be:
+
+```
+{
+    "message": "Welcome to the Intro to REST APIs workshop!",
+    "sample_data": {
+        "data": "This is some sample data."
+    }
+}
+```
+
+<br>
+
 - Terminate the app my entering Ctrl + C or similar command.
 
 <br>
