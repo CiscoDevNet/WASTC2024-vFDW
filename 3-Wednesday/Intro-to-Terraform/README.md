@@ -247,7 +247,7 @@ The results shoud look something like this (truncated for brevity):
 <br>
 
 
-### **Step 4**: Remove diles with Destroy
+### **Step 4**: Remove infrastructure with Destroy
 
 - Destroy the created infrastructure:
 
