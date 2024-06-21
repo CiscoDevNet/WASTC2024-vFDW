@@ -163,7 +163,7 @@ resource "docker_container" "nginx" {
 
   ports {
     internal = 80
-    external = 8080
+    external = 8081
   }
 }
 ```
@@ -203,7 +203,7 @@ resource "docker_container" "nginx" {
 
   ports {
     internal = 80
-    external = 8080
+    external = 8081
   }
 }
 ```
@@ -217,9 +217,14 @@ resource "docker_container" "nginx" {
 - Initialize the Terraform working directory:
 - 
 ```bash
-terraform init
+terraform init -upgrade
 ```
+
+
+
 <br>
+
+
 
 
 - Plan and Apply the Configuration
@@ -229,6 +234,8 @@ Generate and review the execution plan:
 ```bash
 terraform plan
 ```
+
+
 <br>
 
 - Apply the configuration to create the infrastructure:
@@ -239,12 +246,15 @@ terraform apply
 
 Note: Type yes when prompted to confirm the apply.
 
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/469d2adc-8eea-4f92-a0f4-86a1f214f060)
+
+
 <br>
 
 
 ### **Step 3**: Verify the Infrastructure
 
-- Open your web browser and navigate to [http://localhost:8080](http://localhost:8080).
+- Open your web browser and navigate to [http://localhost:8081](http://localhost:8081).
 - You should see the NGINX welcome page, indicating that the Docker container is running and accessible.
 
 <br>
