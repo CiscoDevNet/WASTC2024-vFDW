@@ -24,6 +24,8 @@ This repository contains a hands-on demonstration of REST APIs using Python and 
 
 ```bash
 git clone https://github.com/CiscoDevNet/WASTC2024-vFDW.git
+```
+```bash
 cd WASTC2024-vFDW/3-Monday/Intro-to-REST-APIs
 ```
 <br>
@@ -201,7 +203,7 @@ app/tests/test_example_api.py .                                          [100%]
 <br>
 
 
-## First part of Demo
+## Second part of Demo
 
 ### **Introduction**: 
 
