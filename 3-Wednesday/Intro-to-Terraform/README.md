@@ -7,7 +7,6 @@
 - Web browser
 - IDE - [Visual Studio Code](https://code.visualstudio.com/Download) recommended
 - [Terraform](https://www.terraform.io/) installed on your system.
-- [Docker](https://www.docker.com/) installed on your system.
 <br>
 
 
