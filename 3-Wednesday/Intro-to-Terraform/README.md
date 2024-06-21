@@ -247,7 +247,7 @@ The results shoud look something like this (truncated for brevity):
 <br>
 
 
-### **Step 4**: Cleanup
+### **Step 4**: Remove diles with Destroy
 
 - Destroy the created infrastructure:
 
@@ -298,6 +298,105 @@ It's generally not recommended to delete the state files unless you are intentio
 
 
 <br>
+
+### ** Step 5: 
+
+
+- replace the code in **main.tf** with this:
+
+```
+# Data source for rendering the template
+data "template_file" "hello_template" {
+  template = file("${path.module}/templates/hello.tpl")
+
+  vars = {
+    name = var.person_name
+  }
+}
+
+# Resource for the rendered template file
+resource "local_file" "hello_template" {
+  filename = "${path.module}/hello_from_template.txt"
+  content  = data.template_file.hello_template.rendered
+}
+
+# Resource for creating a file conditionally
+resource "local_file" "conditional_file" {
+  count    = var.create_additional_file ? 1 : 0
+  filename = "${path.module}/conditional.txt"
+  content  = "This file is created conditionally."
+}
+
+# Resource that depends on the conditional file
+resource "local_file" "dependent_file" {
+  depends_on = [local_file.conditional_file]
+
+  filename = "${path.module}/dependent.txt"
+  content  = "This file depends on the conditional file."
+}
+
+# Module usage for creating a file
+module "file_from_module" {
+  source      = "./modules/file_creator"
+  file_name   = "module_created_file.txt"
+  file_content = "This file was created by a module."
+}
+
+output "filename" {
+  value = local_file.module_file.filename
+  description = "The filename of the file created by the module."
+}
+
+```
+
+<br>
+
+- Replace the code in **variables.tf** with:
+
+```
+variable "person_name" {
+  description = "The name of the person to greet in the template"
+  default     = "World"
+}
+
+variable "create_additional_file" {
+  description = "Whether to create an additional file"
+  default     = false
+}
+```
+
+<br>
+
+- Replace the code in **outputs.tf** with:
+
+```
+output "hello_template_file" {
+  value = local_file.hello_template.filename
+  description = "The path of the 'Hello, World!' file created from the template"
+}
+
+output "conditional_file" {
+  value = var.create_additional_file ? [local_file.conditional_file[0].filename] : []
+  description = "The path of the conditionally created file"
+}
+
+output "dependent_file" {
+  value = var.create_additional_file ? [local_file.dependent_file.filename] : []
+  description = "The path of the file that depends on the conditional file"
+}
+
+output "module_created_file" {
+  value = module.file_from_module.filename
+  description = "The path of the file created by the module"
+}
+
+output "next_steps" {
+  value = "Try modifying the variables to change the file contents or the number of files created. Then, run 'terraform apply' again to see the changes."
+  description = "Instructions for the next steps to take after applying the configuration"
+}
+```
+
+
 
 ### **Conclusion**
 
