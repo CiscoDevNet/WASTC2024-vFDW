@@ -339,3 +339,9 @@ Visit [Terraform and Infrastructure as Code](https://developer.cisco.com/iac/) f
 
 The best place to practice your Terraform skills in the [DevNet Learning Labs](https://developer.cisco.com/learning/search/?contentType=track,module,lab&keyword=Terraform&sortBy=luceneScore).
 
+<br>
+
+- **Terraform tutorials from Hashicorp**
+
+https://developer.hashicorp.com/terraform/tutorials
+
