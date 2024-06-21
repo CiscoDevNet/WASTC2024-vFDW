@@ -59,7 +59,7 @@ Install Terraform (there are two ways to do this)
 
 <br>
 
-1. Install with a package manager
+**1. Install with a package manager**
 
 <br>
 
@@ -98,7 +98,7 @@ sudo apt-get update && sudo apt-get install terraform
 <br>
 
 
-2. Manual (Download)
+**2. Manual (Download)**
 
 - Download Terraform: Visit the Terraform [downloads page](https://developer.hashicorp.com/terraform/install) and download the appropriate package for your operating system.
 
