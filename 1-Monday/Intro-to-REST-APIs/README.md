@@ -134,7 +134,7 @@ In **main.py**, uncomment lines 4 and 16, save the file and reload the webpage (
 
 Let's take a step back and consider an extremely important concept in app development: testing.
 
-The **test_example_api.py** files in app and app2 are included to demonstrate how to write unit tests for your REST API. Testing is an essential part of software development, ensuring that your code works as expected and helps you catch bugs early.
+The **/tests/test_example_api.py** files in app and app2 are included to demonstrate how to write unit tests for your REST API. Testing is an essential part of software development, ensuring that your code works as expected and helps you catch bugs early.
 
 Here’s a detailed explanation of the **test_example_api.py** file and how to run the tests.
 
