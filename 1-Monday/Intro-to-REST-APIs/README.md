@@ -108,9 +108,11 @@ python3 -m app.main
 }
 ```
 
+<br>
+
 - Now, instead of just a static message from **main.py**, let's import data from a function in another module.
 
-In **main.py**, uncomment lines 3 and 15, save the file and reload the webpage (you may need to do it twice). The results should now be:
+In **main.py**, uncomment lines 4 and 16, save the file and reload the webpage (you may need to do it twice). The results should now be:
 
 ```
 {
