@@ -56,17 +56,54 @@ venv\Scripts\activate
 
 ### **Step 4**: Install Terraform
 
+- Install Terraform (there are tow ways to do this)
+
+
+1. Install with a package manager
+
+
+- For macOS:
+
+You can use Homebrew, a package manager for macOS, to install Terraform with the following command:
+
+```bash
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
+```
+
+- For Windows:
+
+You can use Chocolatey, a package manager for Windows, to install Terraform with the following command:
+
+```bash
+choco install terraform
+```
+
+- For Linux:
+
+Depending on your distribution, you might be able to use a package manager like apt for Debian/Ubuntu or yum for Red Hat/CentOS. For example, on Ubuntu, you could use the following commands:
+
+```bash
+sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt-get update && sudo apt-get install terraform
+```
+
+<br>
+
+
+2. Manual (Download)
+
 - Download Terraform: Visit the Terraform [downloads page](https://developer.hashicorp.com/terraform/install) and download the appropriate package for your operating system.
 <br>
 
-- Install Terraform:
-
-MacOS/Linux:
+- MacOS/Linux:
 ```bash
 sudo unzip terraform_<VERSION>_linux_amd64.zip -d /usr/local/bin/
 ```
 
-Windows:
+- Windows:
 Extract the downloaded zip file and add the executable to your PATH.
 <br>
 
