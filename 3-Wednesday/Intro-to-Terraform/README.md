@@ -124,7 +124,8 @@ Extract the downloaded zip file and add the executable to your PATH.
 terraform -v
 ```
 
-![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/1a379f6a-5049-4dc4-a5d2-138874645dfe)
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/20e05a78-ec9b-4f11-8b2f-e2b1389d2304)
+
 
 <br>
 
