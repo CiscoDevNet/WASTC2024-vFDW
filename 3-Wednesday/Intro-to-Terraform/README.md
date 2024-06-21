@@ -13,7 +13,7 @@
 
 ## Prologue
 
-Terraform is an open-source tool that allows you to define and provision infrastructure using a simple, declarative configuration language. This lab will guide you through the basics of Terraform, from installation to creating a simple local infrastructure using Docker.
+Welcome to our "Intro to Terraform" session! Today, we're going to explore the powerful world of Infrastructure as Code (IaC) using Terraform, a tool that allows us to define and manage infrastructure with simple, declarative code. Whether you're a network engineer or an IT educator, you'll discover how Terraform can streamline your workflows and ensure consistency across environments. Get ready to dive into a hands-on lab that will give you a taste of Terraform's capabilities without the need for any cloud providers. Let's embark on this journey to automate and innovate the way we handle our infrastructure!
 <br>
 
 
@@ -160,15 +160,17 @@ output "dynamic_files" {
 ### **Step 2**: Initilize Terraform, then plan and apply the configuration
 
 - Initialize the Terraform working directory:
-- 
+  
 ```bash
-terraform init -upgrade
+terraform init
 ```
+
+The results shoud look something like this:
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/33aa631a-fcbc-412b-b729-6f672407d2b8)
 
 
 
 <br>
-
 
 
 
@@ -179,6 +181,11 @@ Generate and review the execution plan:
 ```bash
 terraform plan
 ```
+
+The results shoud look something like this (truncated for brevity):
+
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/86e095d9-5770-431e-b1be-1f4cf5312bc5)
+
 
 
 <br>
@@ -191,16 +198,22 @@ terraform apply
 
 Note: Type yes when prompted to confirm the apply.
 
-![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/469d2adc-8eea-4f92-a0f4-86a1f214f060)
+The results shoud look something like this (truncated for brevity):
+
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/a64d5308-c270-40cd-8865-ef9ce3fbc763)
 
 
 <br>
 
 
-### **Step 3**: Verify the Infrastructure
+### **Step 3**: Observe the results of our Terraform operations
 
-- Open your web browser and navigate to [http://localhost:8081](http://localhost:8081).
-- You should see the NGINX welcome page, indicating that the Docker container is running and accessible.
+- Three new files should have been created and populated with the following data:
+
+1. **hello.tx**: "Hello, World!"
+2. **file-0.txt**: "This is file number 1"
+3. **file-1.txt**: "This is file number 2"
+2. **file-2.txt**: "This is file number 3"
 
 <br>
 
@@ -212,18 +225,65 @@ Note: Type yes when prompted to confirm the apply.
 ```bash
 terraform destroy
 ```
-
 > **Note:** Type yes when prompted to confirm the destroy.
+
+<br>
+
+The results shoud look something like this (truncated for brevity):
+
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/7b714ab2-ddce-48ad-81cc-56e32c046ffa)
+
+<br>
+
+Check the directory and you should see that all of these files have been removed:
+
+**hello.tx**
+**file-0.txt**
+**file-1.txt**"
+**file-2.txt**
+
+
 
 <br>
 
 ### **Conclusion**
 
-In this lab, you learned the basics of Terraform, including how to install it, configure a provider for Docker, define infrastructure as code, and apply and destroy the configuration. Terraform, combined with Docker, provides a powerful way to manage local development environments and infrastructure consistently.
+Thank you for participating in our interactive Terraform lab! By now, you should have a foundational understanding of how Terraform can be used to manage and provision infrastructure through code, even in a local context. We've seen how Terraform can create, update, and delete resources in a predictable and efficient manner. 
 
-Feel free to explore more Terraform features and advanced configurations to deepen your understanding and improve your infrastructure management skills. Happy coding!
+As you continue to explore Terraform, remember that the principles you've learned today are just the beginning. There's a vast ecosystem out there for you to harness, and the skills you've acquired will serve as a solid base for managing real-world cloud infrastructure. Keep experimenting, keep learning, and most importantly, have fun automating your infrastructure!
 
 <br>
 
 ## Additional Resources
+
+
+
+- You can also run Terraform on the HashiCorp SaaS platform, which has a free tier. Sign up here:
+
+https://app.terraform.io/public/signup/account
+ 
+
+- Terraform Providers from Cisco DevNet
+
+At the time of this video’s production, the Terraform Providers for Cisco technologies and devices be found at this URL: 
+
+https://registry.terraform.io/search/providers?namespace=CiscoDevNet
+
+
+- Terraform at Cisco
+
+At Cisco DevNet, your main hub to lean about Terraform is Cisco with Terraform at:
+
+https://developer.cisco.com/automation-terraform/
+
+ 
+
+- Terraform and Infrastructure as Code
+
+Visit https://developer.cisco.com/iac/ to learn more about Terraform and Infrastructure as Code, including providers, Ansible collections, NSO NEDs, and how Cisco enables IaC across the entire network fabric.
+
+
+- Terraform Learning Labs
+
+The best place to practice your Terraform skills in the DevNet Learning Labs. See https://developer.cisco.com/learning/search/?contentType=track,module,lab&keyword=Terraform&sortBy=luceneScore
 
