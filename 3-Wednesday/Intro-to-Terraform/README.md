@@ -299,7 +299,8 @@ It's generally not recommended to delete the state files unless you are intentio
 
 <br>
 
-### ** Step 5: 
+
+### ** Step 5: Modify our configuration
 
 
 - replace the code in **main.tf** with this:
@@ -341,12 +342,6 @@ module "file_from_module" {
   file_name   = "module_created_file.txt"
   file_content = "This file was created by a module."
 }
-
-output "filename" {
-  value = local_file.module_file.filename
-  description = "The filename of the file created by the module."
-}
-
 ```
 
 <br>
@@ -366,6 +361,7 @@ variable "create_additional_file" {
 ```
 
 <br>
+
 
 - Replace the code in **outputs.tf** with:
 
@@ -395,6 +391,52 @@ output "next_steps" {
   description = "Instructions for the next steps to take after applying the configuration"
 }
 ```
+
+- Run our sequence of Terraform commands again:
+
+```bash
+terraform init
+```
+
+```bash
+terraform plan
+```
+
+```bash
+terraform apply
+```
+
+
+When you run **terraform plan**, Terraform performs several actions:
+
+
+1. Reads the Configuration: Terraform reads your .tf files to understand the desired state of your infrastructure as you have defined it.
+
+2. Initializes the Backend: If you have defined a backend, Terraform initializes it. The backend is where Terraform stores state data.
+
+3. Initializes Providers: Terraform initializes the providers you have specified in your configuration. Providers are plugins that Terraform uses to interact with cloud services, SaaS providers, and other APIs.
+
+4. Refreshes State: Terraform compares the current state of your infrastructure with the state it has stored in the backend. This helps Terraform understand what has been changed outside of Terraform's management.
+
+5. Creates a Plan: Terraform creates an execution plan that outlines what actions it will take to change the current state of your infrastructure to match the desired state defined in your configuration. This plan includes creating, updating, or deleting resources as necessary.
+
+6. Outputs the Plan: Terraform outputs the plan to your terminal, showing you a summary of the changes it will make. This output is a diff showing what will be added, changed, or destroyed.
+
+
+The terraform plan command is a way to check what Terraform will do before actually making any changes to your infrastructure. It's a crucial step for reviewing changes to prevent unintended modifications.
+
+The plan itself does not make any changes to your infrastructure. To apply the changes proposed in the plan, you would need to run terraform apply. This command will ask for confirmation before proceeding to apply the changes described in the plan.
+
+If you've just run terraform plan and it completed successfully, you should see output similar to the following:
+
+```
++ indicates resources that will be created.
+- indicates resources that will be destroyed.
+~ indicates resources that will be modified in place.
+<= indicates resources that will be read during the apply phase and may result in changes due to external influences.
+```
+
+The plan output is Terraform's way of showing you what it intends to do based on the current state of your infrastructure and the configuration you've written. It's important to review this output carefully to ensure that the changes match your intentions.
 
 
 
