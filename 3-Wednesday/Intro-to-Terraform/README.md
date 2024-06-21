@@ -238,8 +238,11 @@ The results shoud look something like this (truncated for brevity):
 Check the directory and you should see that all of these files have been removed:
 
 **hello.tx**
+<br>
 **file-0.txt**
-**file-1.txt**"
+<br>
+**file-1.txt**
+<br>
 **file-2.txt**
 
 
