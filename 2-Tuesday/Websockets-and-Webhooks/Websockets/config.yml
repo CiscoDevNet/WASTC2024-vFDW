@@ -1,0 +1,37 @@
+---
+###########################################################
+######### NX-OS Websocket Monitor - Configuration #########
+###########################################################
+
+# This config file describes essentially three things:
+#   - The connection between the Websocket and NX-OS
+#   - Which NX-OS Objects are meant to be monitored
+#   - How the Websocket proceeds with the received information/logs
+
+##### THESE SETTINGS ARE MANDATORY #####
+
+nxos_login:
+  address: "10.10.20.177"
+  username: "admin"
+  password: "admin"
+
+##### Monitored MO Settings #####
+# This part of the configuration contains the MOs which are supposed to be 
+# monitored. These are specified by providing their DN. If none are specified,
+# by default faultInst objects are monitored.
+
+##### THESE SETTINGS SHOULD BE SPECIFIED #####
+
+monitored_objects:
+  - /api/mo/sys/intf/phys-[eth1/3]
+  - /api/mo/sys/intf/phys-[eth1/11]
+  - /api/node/mo/sys/bd/bd-[vlan-101]
+  - /api/node/mo/sys/intf/phys-[eth1/11]
+
+##### THESE SETTINGS SHOULD BE SPECIFIED #####
+
+data_output:
+  toFile:
+    baseFilename: "testOutput"
+
+...
