@@ -54,7 +54,7 @@ venv\Scripts\activate
 <br>
 
 
-### **Step 4**: Install Terraform
+### **Step 3**: Install Terraform
 
 - Install Terraform (there are tow ways to do this)
 
@@ -114,14 +114,6 @@ terraform -v
 ```
 <br>
 
-
-### **Step 5**: Install Dependencies
-
-```bash
-pip3 install -r requirements.txt
-```
-<br>
-<br>
 
 
 
