@@ -102,15 +102,18 @@ sudo apt-get update && sudo apt-get install terraform
 2. Manual (Download)
 
 - Download Terraform: Visit the Terraform [downloads page](https://developer.hashicorp.com/terraform/install) and download the appropriate package for your operating system.
+
 <br>
 
 - MacOS/Linux:
 ```bash
 sudo unzip terraform_<VERSION>_linux_amd64.zip -d /usr/local/bin/
 ```
+<br>
 
 - Windows:
 Extract the downloaded zip file and add the executable to your PATH.
+
 <br>
 
 - Verify Installation:
