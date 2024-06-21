@@ -452,6 +452,18 @@ If you've just run terraform plan and it completed successfully, you should see 
 
 The plan output is Terraform's way of showing you what it intends to do based on the current state of your infrastructure and the configuration you've written. It's important to review this output carefully to ensure that the changes match your intentions.
 
+<br>
+
+### **Clean up**: Remove infrastructure with Destroy
+
+- Destroy the newly created infrastructure:
+
+```bash
+terraform destroy
+```
+> **Note:** Type yes when prompted to confirm the destroy.
+
+<br>
 
 
 ### **Conclusion**
