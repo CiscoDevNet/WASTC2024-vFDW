@@ -246,6 +246,29 @@ Check the directory and you should see that all of these files have been removed
 **file-2.txt**
 
 
+<br>
+
+You;ll notice two files remain in your directory:
+
+1. **terraform.tfstate**
+
+This is the Terraform state file. Terraform uses this file to keep track of the state of your managed infrastructure and configuration. When you apply your Terraform configuration, Terraform writes the state of your infrastructure to this file. This state allows Terraform to map real-world resources to your configuration, keep track of metadata, and improve performance for large infrastructures. It is also used to determine what changes need to be applied to your infrastructure when you run terraform plan or terraform apply.
+
+
+2. **terraform.tfstate.backup**
+
+This is a backup of the previous state file. Terraform automatically creates this backup file each time the state is written to the terraform.tfstate file. This happens when you successfully run terraform apply or when you run terraform refresh. The backup file ensures that you have a way to recover the previous state in case something goes wrong with the current state.
+
+
+When you remove these files, you effectively delete Terraform's record of the current and previous states of your infrastructure. Without the state file, Terraform can no longer accurately determine the actual state of the resources it manages. This could lead to several issues, such as:
+
+
+Terraform might try to create resources that already exist because it has no record of their existence.
+Terraform might not be able to destroy resources because it doesn't know about them.
+You might encounter discrepancies between your actual infrastructure and what Terraform believes the infrastructure should be.
+
+It's generally not recommended to delete the state files unless you are intentionally trying to reset Terraform's knowledge of your infrastructure, and you are sure that the infrastructure managed by the state file is no longer needed or can be safely reconstructed. Always handle state files with care, and consider using state backends that offer state locking and versioning for better state management and safety.
+
 
 <br>
 
