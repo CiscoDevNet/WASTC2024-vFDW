@@ -36,7 +36,7 @@
 
 The [CODE_OF_CONDUCT.md](https://github.com/CiscoDevNet/WASTC2024-vFDW/blob/main/CODE_OF_CONDUCT.md) reflects our standards for interaction. 
 
-The [CONTRIBUTING.md](https://github.com/CiscoDevNet/WASTC2024-vFDW/blob/main/CONTRIBUTING.md) file instructs new contributors on how to communicate with the project maintainers, report issues, provide pull requests, reviewing contributions, and how to version control releases.
+The [CONTRIBUTING.md](https://github.com/CiscoDevNet/WASTC2024-vFDW/blob/main/CONTRIBUTING.md) file instructs new contributors on how to communicate with the project maintainers, report issues, provide pull requests, reviewing contributions, and how to version control releases...
 
 The [LICENSE](https://github.com/CiscoDevNet/WASTC2024-vFDW/blob/main/LICENSE) file should contain the license you intend for the source code in the repo. 
 
