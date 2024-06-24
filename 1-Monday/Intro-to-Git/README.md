@@ -131,3 +131,6 @@ Updates your current local working branch with all new commits from the correspo
 - **HEAD**: representing your current working directory, the HEAD pointer can be moved to different branches, tags, or commits when using ```git switch```
 
 Source: [training.github.com/downloads/github-git-cheat-sheet/](https://training.github.com/downloads/github-git-cheat-sheet/)
+
+# Cisco DevNet Learning Lab
+[A Brief Introduction to Git](https://developer.cisco.com/learning/labs/dne-git-basic-workflows/hands-on-with-git-and-github/)
