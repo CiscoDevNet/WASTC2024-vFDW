@@ -13,7 +13,7 @@ app = Flask(__name__)
 @app.route('/',methods=['POST'])
 def alarms():
    try:
-      PDT = pytz.timezone('Australia/Melbourne')
+      PDT = pytz.timezone('America/Los_Angeles')
       data = json.loads(request.data)
       print(data)
       message =  '''Team, Alarm event : **''' + data['rule_name_display'] + '''** is received from vManage and here are the complete details <br><br>'''
