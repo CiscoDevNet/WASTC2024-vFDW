@@ -9,3 +9,5 @@ websockets==10.3
 Werkzeug==3.0.3
 requests==2.32.3
 pyaml==24.4.0
+webexteamssdk==1.7
+pytz==2024.1
