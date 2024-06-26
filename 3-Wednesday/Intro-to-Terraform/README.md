@@ -518,7 +518,7 @@ code get_interface_state.py
 
 ### **Step 3:** Run Terraform
 
-Now, observe **main.tf**, which Terraform will use. It will have **get_interface_state.py** run to get the state info and use it.
+Now, observe **main.tf**, which Terraform will use. It will have **get_interface_state.py** run to get the state info and print it.
 
 Run Terraform:
 
@@ -532,6 +532,53 @@ terraform plan
 
 ```bash
 terraform apply
+```
+
+<br>
+
+### **Step 3:** Use Terraform to edit the device banner
+
+- cd into **banner**
+
+```bash
+cd banner
+```
+
+<br>
+
+- observe main.tf and edit the values to change the banners to how you want them
+
+<br>
+
+- Run Terraform
+
+```bash
+terraform init
+```
+
+```bash
+terraform plan
+```
+
+```bash
+terraform apply
+```
+
+<br>
+
+- Check the banner on the device **dist-rtr02**
+
+```bash
+show running-config | include banner
+```
+
+Output:
+
+```
+banner exec ^CAlex's Banner^C
+banner login ^CAlex's Login Banner^C
+banner motd ^CAlex's MOTD Banner^C
+banner prompt-timeout ^CAlex's Prompt-Timeout Banner^C
 ```
 
 <br>
