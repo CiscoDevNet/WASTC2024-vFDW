@@ -1,0 +1,14 @@
+---
+
+- name: Cisco show version example
+  hosts: iosxe
+  gather_facts: false
+
+  tasks:
+  - name: run show version on remote devices
+    cisco.ios.ios_command:
+      commands: show version
+    register: output
+  - name: print output
+    debug:
+      var: output.stdout_lines
