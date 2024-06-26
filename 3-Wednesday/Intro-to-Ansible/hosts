@@ -1,0 +1,9 @@
+[iosxe]
+10.10.20.175
+10.10.20.176
+
+[iosxe:vars]
+ansible_network_os=ios
+ansible_user='{{ lookup("env", "IOSXE_USERNAME") }}'
+ansible_password='{{ lookup("env", "IOSXE_PASSWORD") }}'
+ansible_connection=network_cli
