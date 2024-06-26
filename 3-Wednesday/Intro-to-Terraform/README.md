@@ -466,6 +466,65 @@ terraform destroy
 <br>
 
 
+# How to use Postman to create a script that Terraform can use
+
+> **Note:** This part of the lab is specific to WASTC2024-vFDW and the resources set-up for it
+
+In yesterday's sessions, we saw how to use Postman to interact with devices. Specifically, we used Cisco's IOS-XE collection in Postman. Today, we will leverage that to create a script that Terraform will use.
+
+- Make sure you've entered the VPN and then connect to **dist-rtr02** and make sure RESTCONF is enabled
+
+```bash
+config t
+ip http secure-server
+restconf
+```
+
+<br>
+
+Now, head to the Postman collection and view the [RESTCONF - Operational State interfaces](https://www.postman.com/alexstev/workspace/wastc-vfdw/request/10257233-58860c65-208b-4875-ad39-050ebbe4d0ce) request:
+
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/e1b89eac-63bd-4df3-92eb-f82f3c9e13fa)
+
+
+
+- Set the Authorization tab to the appropriate vlues (for our purposes *cisco/cisco*)
+  
+- Define the base URL (either in an Environment or directly in the request URL) as **10.10.20.176**
+
+- Click send and observe the response
+
+- Click the Code (</>) icon on the right and observe the Python -Requests output. THis is what we've used to populate **get_interface_state.py** in our GitHub repo.
+
+- Change directories to **postman** and observe the file:
+
+```bash
+cd postman
+```
+```bash
+code get_interface_state.py
+```
+
+<br>
+
+Now, observe **main.tf**, which Terraform will use. It will have **get_interface_state.py** run to get the state info and use it.
+
+Run Terraform:
+
+```bash
+terraform init
+```
+
+```bash
+terraform plan
+```
+
+```bash
+terraform apply
+```
+
+
+
 ### **Conclusion**
 
 Thank you for participating in our interactive Terraform lab! By now, you should have a foundational understanding of how Terraform can be used to manage and provision infrastructure through code, even in a local context. We've seen how Terraform can create, update, and delete resources in a predictable and efficient manner.
