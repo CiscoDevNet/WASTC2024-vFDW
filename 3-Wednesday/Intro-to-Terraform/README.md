@@ -466,11 +466,18 @@ terraform destroy
 <br>
 
 
-# How to use Postman to create a script that Terraform can use
+## How to use Postman to create a script that Terraform can use
 
 > **Note:** This part of the lab is specific to WASTC2024-vFDW and the resources set-up for it
 
+<br>
+
 In yesterday's sessions, we saw how to use Postman to interact with devices. Specifically, we used Cisco's IOS-XE collection in Postman. Today, we will leverage that to create a script that Terraform will use.
+
+<br>
+
+### **Step 1:**: Enable RESTCONF
+
 
 - Make sure you've entered the VPN and then connect to **dist-rtr02** and make sure RESTCONF is enabled
 
@@ -482,10 +489,12 @@ restconf
 
 <br>
 
+### **Step 2:**: Understand how to create a script with Postman
+
+
 Now, head to the Postman collection and view the [RESTCONF - Operational State interfaces](https://www.postman.com/alexstev/workspace/wastc-vfdw/request/10257233-58860c65-208b-4875-ad39-050ebbe4d0ce) request:
 
 ![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/e1b89eac-63bd-4df3-92eb-f82f3c9e13fa)
-
 
 
 - Set the Authorization tab to the appropriate vlues (for our purposes *cisco/cisco*)
@@ -507,6 +516,8 @@ code get_interface_state.py
 
 <br>
 
+### **Step 3:**: Run Terraform
+
 Now, observe **main.tf**, which Terraform will use. It will have **get_interface_state.py** run to get the state info and use it.
 
 Run Terraform:
@@ -523,6 +534,7 @@ terraform plan
 terraform apply
 ```
 
+<br>
 
 
 ### **Conclusion**
