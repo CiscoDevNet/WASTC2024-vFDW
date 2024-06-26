@@ -472,7 +472,7 @@ terraform destroy
 
 <br>
 
-In yesterday's sessions, we saw how to use Postman to interact with devices. Specifically, we used Cisco's IOS-XE collection in Postman. Today, we will leverage that to create a script that Terraform will use.
+In yesterday's sessions, we saw how to use Postman to interact with devices. Specifically, we used Cisco's IOS-XE collection in Postman. Today, we will leverage that to create a script that Terraform will use. We'll also use Terraform to change device banners.
 
 <br>
 
@@ -536,7 +536,7 @@ terraform apply
 
 <br>
 
-### **Step 3:** Use Terraform to edit the device banner
+### **Step 4:** Use Terraform to edit the device banner
 
 - cd into **banner**
 
@@ -546,7 +546,10 @@ cd banner
 
 <br>
 
-- observe main.tf and edit the values to change the banners to how you want them
+- observe **main.tf** and edit the values to change the banners to how you want them
+
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/fbc70662-6298-4d28-87b8-a5a9edbbb728)
+
 
 <br>
 
