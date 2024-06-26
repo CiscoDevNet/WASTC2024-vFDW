@@ -6,7 +6,7 @@
 - OS: Mac, Windows, Linux should all be fine
 - Web browser
 - IDE - [Visual Studio Code](https://code.visualstudio.com/Download) recommended
-- [Terraform](https://www.terraform.io/) installed on your system.
+- [Terraform](https://www.terraform.io/) installed on your system. (This was tested on Terraform v1.3.1)
 <br>
 
 
