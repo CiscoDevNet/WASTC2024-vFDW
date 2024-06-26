@@ -466,6 +466,127 @@ terraform destroy
 <br>
 
 
+## How to use Postman to create a script that Terraform can use
+
+> **Note:** This part of the lab is specific to WASTC2024-vFDW and the resources set-up for it
+
+<br>
+
+In yesterday's sessions, we saw how to use Postman to interact with devices. Specifically, we used Cisco's IOS-XE collection in Postman. Today, we will leverage that to create a script that Terraform will use. We'll also use Terraform to change device banners.
+
+<br>
+
+### **Step 1:** Enable RESTCONF
+
+
+- Make sure you've entered the VPN and then connect to **dist-rtr02** and make sure RESTCONF is enabled
+
+```bash
+config t
+ip http secure-server
+restconf
+```
+
+<br>
+
+### **Step 2:** Understand how to create a script with Postman
+
+
+Now, head to the Postman collection and view the [RESTCONF - Operational State interfaces](https://www.postman.com/alexstev/workspace/wastc-vfdw/request/10257233-58860c65-208b-4875-ad39-050ebbe4d0ce) request:
+
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/e1b89eac-63bd-4df3-92eb-f82f3c9e13fa)
+
+
+- Set the Authorization tab to the appropriate vlues (for our purposes *cisco/cisco*)
+  
+- Define the base URL (either in an Environment or directly in the request URL) as **10.10.20.176**
+
+- Click send and observe the response
+
+- Click the Code (</>) icon on the right and observe the Python -Requests output. THis is what we've used to populate **get_interface_state.py** in our GitHub repo.
+
+- Change directories to **postman** and observe the file:
+
+```bash
+cd postman
+```
+```bash
+code get_interface_state.py
+```
+
+<br>
+
+### **Step 3:** Run Terraform
+
+Now, observe **main.tf**, which Terraform will use. It will have **get_interface_state.py** run to get the state info and print it.
+
+Run Terraform:
+
+```bash
+terraform init
+```
+
+```bash
+terraform plan
+```
+
+```bash
+terraform apply
+```
+
+<br>
+
+### **Step 4:** Use Terraform to edit the device banner
+
+- cd into **banner**
+
+```bash
+cd banner
+```
+
+<br>
+
+- observe **main.tf** and edit the values to change the banners to how you want them
+
+![image](https://github.com/CiscoDevNet/WASTC2024-vFDW/assets/27918923/fbc70662-6298-4d28-87b8-a5a9edbbb728)
+
+
+<br>
+
+- Run Terraform
+
+```bash
+terraform init
+```
+
+```bash
+terraform plan
+```
+
+```bash
+terraform apply
+```
+
+<br>
+
+- Check the banner on the device **dist-rtr02**
+
+```bash
+show running-config | include banner
+```
+
+Output:
+
+```
+banner exec ^CAlex's Banner^C
+banner login ^CAlex's Login Banner^C
+banner motd ^CAlex's MOTD Banner^C
+banner prompt-timeout ^CAlex's Prompt-Timeout Banner^C
+```
+
+<br>
+
+
 ### **Conclusion**
 
 Thank you for participating in our interactive Terraform lab! By now, you should have a foundational understanding of how Terraform can be used to manage and provision infrastructure through code, even in a local context. We've seen how Terraform can create, update, and delete resources in a predictable and efficient manner.
