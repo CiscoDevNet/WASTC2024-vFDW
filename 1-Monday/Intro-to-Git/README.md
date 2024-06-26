@@ -134,3 +134,7 @@ Source: [training.github.com/downloads/github-git-cheat-sheet/](https://training
 
 # Cisco DevNet Learning Lab
 [A Brief Introduction to Git](https://developer.cisco.com/learning/labs/dne-git-basic-workflows/hands-on-with-git-and-github/)
+
+# Aaron info:
+[LinkedIn](https://www.linkedin.com/in/ahamachi/)
+[YouTube](https://www.youtube.com/@ProfessorHamachi)
