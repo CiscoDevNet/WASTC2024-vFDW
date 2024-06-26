@@ -68,8 +68,8 @@ Install Terraform (there are two ways to do this)
 You can use Homebrew, a package manager for macOS, to install Terraform with the following command:
 
 ```bash
-brew tap hashicorp/tap
-brew install hashicorp/tap/terraform
+brew install tfenv
+tfenv install 1.3.1
 ```
 
 <br>
@@ -79,7 +79,7 @@ brew install hashicorp/tap/terraform
 You can use Chocolatey, a package manager for Windows, to install Terraform with the following command:
 
 ```bash
-choco install terraform
+choco install terraform --version=1.3.1
 ```
 
 <br>
@@ -92,7 +92,8 @@ Depending on your distribution, you might be able to use a package manager like 
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-sudo apt-get update && sudo apt-get install terraform
+sudo apt-get update
+sudo apt-get install terraform=1.3.1
 ```
 
 <br>
